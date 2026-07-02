@@ -36,7 +36,7 @@ Each run produces:
 ### Step 1: Fork or clone this repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/patch-tuesday-tracker.git
+git clone https://github.com/TayvenSec/patch-tuesday-tracker.git
 cd patch-tuesday-tracker
 ```
 
@@ -48,7 +48,7 @@ cd patch-tuesday-tracker
 4. Branch: `main`, Folder: `/docs`
 5. Click **Save**
 
-Your site will be live at: `https://YOUR_USERNAME.github.io/patch-tuesday-tracker/`
+Your site will be live at: `https://TayvenSec.github.io/patch-tuesday-tracker/`
 
 ### Step 3: Enable GitHub Actions
 
