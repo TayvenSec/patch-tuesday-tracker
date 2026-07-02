@@ -1,0 +1,272 @@
+{
+  "collected_at": "2026-07-02T10:34:54.508265Z",
+  "year": 2026,
+  "month": 7,
+  "month_label": "July 2026",
+  "platforms": {
+    "windows": {
+      "platform": "windows",
+      "month": "2026-Jul",
+      "updates": [],
+      "cves": [],
+      "summary": "No data available yet."
+    },
+    "apple": {
+      "platform": "apple",
+      "month": "July 2026",
+      "source": "https://support.apple.com/en-us/111900",
+      "total_updates": 0,
+      "summary": "No Apple security releases found for July 2026.",
+      "updates": []
+    },
+    "ubuntu": {
+      "platform": "ubuntu",
+      "month": "July 2026",
+      "source": "https://ubuntu.com/security/notices/rss.xml",
+      "total_notices": 7,
+      "total_cves": 889,
+      "summary": "Ubuntu published 7 security notices in July 2026 covering 889 CVEs.",
+      "notices": [
+        {
+          "usn_id": "USN-8467-2",
+          "title": "USN-8467-2: Perl vulnerabilities",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8467-2",
+          "severity": "Low",
+          "cve_count": 2,
+          "cves": [
+            "CVE-2026-42496",
+            "CVE-2026-8376"
+          ],
+          "summary": "USN-8467-1 fixed vulnerabilities in Perl. This update provides the\ncorresponding fix for Perl on Ubuntu 25.10.\n\nOriginal advisory details:\nIt was discovered that Perl's Archive::Tar module incorrectly handled\nsymlink and hardlink targets during extraction. An attacker could use this\nissue to read or"
+        },
+        {
+          "usn_id": "USN-8493-1",
+          "title": "USN-8493-1: Linux kernel vulnerabilities",
+          "date": "2026-07-01",
+          "link": "https://ubuntu.com/security/notices/USN-8493-1",
+          "severity": "Low",
+          "cve_count": 64,
+          "cves": [
+            "CVE-2026-43117",
+            "CVE-2026-23262",
+            "CVE-2026-31607",
+            "CVE-2026-31659",
+            "CVE-2026-23428",
+            "CVE-2025-71222",
+            "CVE-2026-43114",
+            "CVE-2026-23206",
+            "CVE-2026-23450",
+            "CVE-2026-23182",
+            "CVE-2026-43341",
+            "CVE-2025-38201",
+            "CVE-2026-46119",
+            "CVE-2022-48816",
+            "CVE-2026-31668"
+          ],
+          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - RISC-V architecture;\n  - Cryptographic API;\n  - InfiniBand drivers;\n  - IOMMU subsystem;\n  - Network drivers;\n  - ST"
+        },
+        {
+          "usn_id": "USN-8492-1",
+          "title": "USN-8492-1: Linux kernel vulnerabilities",
+          "date": "2026-07-01",
+          "link": "https://ubuntu.com/security/notices/USN-8492-1",
+          "severity": "Low",
+          "cve_count": 299,
+          "cves": [
+            "CVE-2026-43117",
+            "CVE-2026-23241",
+            "CVE-2026-43230",
+            "CVE-2026-23233",
+            "CVE-2026-31607",
+            "CVE-2026-45916",
+            "CVE-2026-45861",
+            "CVE-2026-23450",
+            "CVE-2026-46249",
+            "CVE-2026-43264",
+            "CVE-2026-46244",
+            "CVE-2026-43277",
+            "CVE-2026-43319",
+            "CVE-2026-45883",
+            "CVE-2026-43071"
+          ],
+          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
+        },
+        {
+          "usn_id": "USN-8488-1",
+          "title": "USN-8488-1: Linux kernel vulnerabilities",
+          "date": "2026-07-01",
+          "link": "https://ubuntu.com/security/notices/USN-8488-1",
+          "severity": "Low",
+          "cve_count": 236,
+          "cves": [
+            "CVE-2026-31624",
+            "CVE-2026-46286",
+            "CVE-2026-31607",
+            "CVE-2026-31615",
+            "CVE-2026-31603",
+            "CVE-2026-46085",
+            "CVE-2026-31575",
+            "CVE-2026-46099",
+            "CVE-2026-46026",
+            "CVE-2026-46028",
+            "CVE-2026-46103",
+            "CVE-2026-43071",
+            "CVE-2026-31699",
+            "CVE-2026-31613",
+            "CVE-2026-46006"
+          ],
+          "summary": "It was discovered that some AMD processors did not properly clear data in\nthe floating point divider unit during speculative execution. A local\nattacker could use this to expose sensitive information. (CVE-2025-54505)\n\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could po"
+        },
+        {
+          "usn_id": "USN-8491-1",
+          "title": "USN-8491-1: Linux kernel (OEM) vulnerabilities",
+          "date": "2026-07-01",
+          "link": "https://ubuntu.com/security/notices/USN-8491-1",
+          "severity": "Low",
+          "cve_count": 62,
+          "cves": [
+            "CVE-2026-43117",
+            "CVE-2026-31607",
+            "CVE-2026-31659",
+            "CVE-2026-23428",
+            "CVE-2026-43114",
+            "CVE-2026-23450",
+            "CVE-2026-43341",
+            "CVE-2026-46244",
+            "CVE-2026-46119",
+            "CVE-2026-31668",
+            "CVE-2026-43378",
+            "CVE-2026-31418",
+            "CVE-2026-31682",
+            "CVE-2026-43083",
+            "CVE-2026-43071"
+          ],
+          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - x86 architecture;\n  - Block layer subsystem;\n  - Cryptographic API;\n  - DMA engine subsystem"
+        },
+        {
+          "usn_id": "USN-8490-1",
+          "title": "USN-8490-1: Linux kernel vulnerabilities",
+          "date": "2026-07-01",
+          "link": "https://ubuntu.com/security/notices/USN-8490-1",
+          "severity": "Low",
+          "cve_count": 61,
+          "cves": [
+            "CVE-2026-43117",
+            "CVE-2026-31607",
+            "CVE-2026-31659",
+            "CVE-2026-23428",
+            "CVE-2026-43114",
+            "CVE-2026-23450",
+            "CVE-2026-43341",
+            "CVE-2026-46244",
+            "CVE-2026-46119",
+            "CVE-2026-31668",
+            "CVE-2026-43378",
+            "CVE-2026-31418",
+            "CVE-2026-31682",
+            "CVE-2026-43083",
+            "CVE-2026-43071"
+          ],
+          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - Block layer subsystem;\n  - Cryptographic API;\n  - DMA engine subsystem;\n  - InfiniBand drive"
+        },
+        {
+          "usn_id": "USN-8489-1",
+          "title": "USN-8489-1: Linux kernel (OEM) vulnerabilities",
+          "date": "2026-07-01",
+          "link": "https://ubuntu.com/security/notices/USN-8489-1",
+          "severity": "Low",
+          "cve_count": 165,
+          "cves": [
+            "CVE-2026-46286",
+            "CVE-2026-46048",
+            "CVE-2026-46085",
+            "CVE-2026-46099",
+            "CVE-2026-46026",
+            "CVE-2026-46028",
+            "CVE-2026-46103",
+            "CVE-2026-46006",
+            "CVE-2026-46062",
+            "CVE-2026-46078",
+            "CVE-2026-46008",
+            "CVE-2026-46100",
+            "CVE-2026-46137",
+            "CVE-2026-46087",
+            "CVE-2026-47334"
+          ],
+          "summary": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the\nRxRPC networking subsystem when processing paged fragments. A local\nattacker could"
+        }
+      ]
+    },
+    "android": {
+      "platform": "android",
+      "month": "July 2026",
+      "source": "https://source.android.com/docs/security/bulletin",
+      "total_cves": 0,
+      "severity_counts": {
+        "Critical": 0,
+        "High": 0,
+        "Moderate": 0,
+        "Low": 0
+      },
+      "patch_levels": [],
+      "summary": "Android Security Bulletin for July 2026: 0 CVEs. Critical: 0, High: 0, Moderate: 0.",
+      "vulnerabilities": []
+    },
+    "redhat": {
+      "platform": "redhat",
+      "month": "July 2026",
+      "advisories": [],
+      "summary": "Collection failed: 404 Client Error: Not Found for url: https://access.redhat.com/security/team/updates/advisory.atom"
+    },
+    "debian": {
+      "platform": "debian",
+      "month": "July 2026",
+      "source": "https://www.debian.org/security/dsa-long",
+      "total_advisories": 0,
+      "total_cves": 0,
+      "summary": "No Debian security advisories found for July 2026.",
+      "advisories": []
+    },
+    "chromeos": {
+      "platform": "chromeos",
+      "month": "July 2026",
+      "source": "https://chromereleases.googleblog.com/feeds/posts/default",
+      "total_releases": 0,
+      "total_cves": 0,
+      "summary": "No ChromeOS security releases found for July 2026.",
+      "releases": []
+    },
+    "palo_alto": {
+      "platform": "palo_alto",
+      "month": "July 2026",
+      "source": "https://security.paloaltonetworks.com/",
+      "total_advisories": 0,
+      "total_cves": 0,
+      "severity_counts": {
+        "Critical": 0,
+        "High": 0,
+        "Medium": 0,
+        "Low": 0
+      },
+      "summary": "No Palo Alto Networks advisories found for July 2026.",
+      "advisories": []
+    },
+    "cisco": {
+      "platform": "cisco",
+      "month": "July 2026",
+      "source": "https://sec.cloudapps.cisco.com/security/center/publicationListing.x",
+      "api_mode": false,
+      "total_advisories": 0,
+      "total_cves": 0,
+      "severity_counts": {
+        "Critical": 0,
+        "High": 0,
+        "Medium": 0,
+        "Low": 0
+      },
+      "summary": "No Cisco advisories found for July 2026. (Set CISCO_CLIENT_ID + CISCO_CLIENT_SECRET env vars for full API access.)",
+      "advisories": []
+    }
+  }
+}

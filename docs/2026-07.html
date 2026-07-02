@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>July 2026 – Patch Tuesday Tracker</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1a1a2e;
+    background: #f8f9fa;
+}
+header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+header h1 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; }
+header p { color: #a0aec0; margin-top: 0.5rem; font-size: 0.95rem; }
+.container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+.month-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+.month-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: box-shadow 0.2s;
+}
+.month-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.month-card h2 { font-size: 1.1rem; font-weight: 600; color: #1a1a2e; }
+.month-card .meta { font-size: 0.8rem; color: #718096; margin-top: 0.25rem; }
+.month-card .stats { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.badge-critical { background: #fff5f5; color: #c53030; border: 1px solid #feb2b2; }
+.badge-platform { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+.month-card .links { margin-top: 1rem; display: flex; gap: 0.75rem; }
+.btn {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 5px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid #e2e8f0;
+    color: #4a5568;
+    background: #f7fafc;
+    transition: background 0.15s;
+}
+.btn:hover { background: #edf2f7; }
+.btn-primary { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
+.btn-primary:hover { background: #2d3748; }
+.section-title { font-size: 1.1rem; font-weight: 600; color: #4a5568; margin-top: 2rem; margin-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+.platform-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.9rem; }
+.platform-table th { text-align: left; padding: 0.5rem 0.75rem; background: #edf2f7; color: #4a5568; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.platform-table td { padding: 0.6rem 0.75rem; border-bottom: 1px solid #e2e8f0; color: #2d3748; }
+.platform-table tr:last-child td { border-bottom: none; }
+.severity-critical { color: #c53030; font-weight: 600; }
+.severity-high { color: #c05621; font-weight: 600; }
+footer { text-align: center; padding: 2rem 1rem; color: #a0aec0; font-size: 0.82rem; border-top: 1px solid #e2e8f0; margin-top: 3rem; }
+footer a { color: #718096; }
+</style>
+</head>
+<body>
+<header>
+    <h1>🛡️ July 2026 Patch Roundup</h1>
+    <p>Collected 2026-07-02 · <a href="index.html" style="color:#a0aec0;">← All months</a></p>
+</header>
+<div class="container">
+    <p class="section-title">Platform Summary</p>
+    <table class="platform-table">
+        <thead>
+            <tr>
+                <th>Platform</th>
+                <th>Total CVEs / Advisories</th>
+                <th>Critical</th>
+                <th>Status</th>
+                <th>Source</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr>
+            <td><strong>Windows</strong></td>
+            <td>—</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td>—</td>
+        </tr>
+
+        <tr>
+            <td><strong>Apple</strong></td>
+            <td>—</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td><a href="https://support.apple.com/en-us/111900" target="_blank">Source</a></td>
+        </tr>
+
+        <tr>
+            <td><strong>Ubuntu</strong></td>
+            <td>889</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td><a href="https://ubuntu.com/security/notices/rss.xml" target="_blank">Source</a></td>
+        </tr>
+
+        <tr>
+            <td><strong>Android</strong></td>
+            <td>0</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td><a href="https://source.android.com/docs/security/bulletin" target="_blank">Source</a></td>
+        </tr>
+
+        <tr>
+            <td><strong>Redhat</strong></td>
+            <td>—</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td>—</td>
+        </tr>
+
+        <tr>
+            <td><strong>Debian</strong></td>
+            <td>0</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td><a href="https://www.debian.org/security/dsa-long" target="_blank">Source</a></td>
+        </tr>
+
+        <tr>
+            <td><strong>Chromeos</strong></td>
+            <td>0</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td><a href="https://chromereleases.googleblog.com/feeds/posts/default" target="_blank">Source</a></td>
+        </tr>
+
+        <tr>
+            <td><strong>Palo Alto</strong></td>
+            <td>0</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td><a href="https://security.paloaltonetworks.com/" target="_blank">Source</a></td>
+        </tr>
+
+        <tr>
+            <td><strong>Cisco</strong></td>
+            <td>0</td>
+            <td>0</td>
+            <td>✅ OK</td>
+            <td><a href="https://sec.cloudapps.cisco.com/security/center/publicationListing.x" target="_blank">Source</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p class="section-title">Summaries</p>
+    
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Windows</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">No data available yet.</p>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Apple</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">No Apple security releases found for July 2026.</p>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Ubuntu</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">Ubuntu published 7 security notices in July 2026 covering 889 CVEs.</p>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Android</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">Android Security Bulletin for July 2026: 0 CVEs. Critical: 0, High: 0, Moderate: 0.</p>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Redhat</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">Collection failed: 404 Client Error: Not Found for url: https://access.redhat.com/security/team/updates/advisory.atom</p>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Debian</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">No Debian security advisories found for July 2026.</p>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Chromeos</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">No ChromeOS security releases found for July 2026.</p>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Palo Alto</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">No Palo Alto Networks advisories found for July 2026.</p>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:8px;">
+            <strong>Cisco</strong>
+            <p style="margin-top:0.5rem;font-size:0.9rem;color:#4a5568;">No Cisco advisories found for July 2026. (Set CISCO_CLIENT_ID + CISCO_CLIENT_SECRET env vars for full API access.)</p>
+        </div>
+
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="https://github.com/TayvenSec/patch-tuesday-tracker/blob/main/data/archive/2026-07-patch-draft.md" 
+           class="btn btn-primary">📝 View Article Draft</a>
+        <a href="https://github.com/TayvenSec/patch-tuesday-tracker/blob/main/data/archive/2026-07-patch-data.json" 
+           class="btn">⬇️ Download JSON</a>
+        <a href="index.html" class="btn">← All Months</a>
+    </div>
+</div>
+<footer>
+    <p>
+        <a href="https://github.com/TayvenSec/patch-tuesday-tracker">View on GitHub</a> · 
+        <a href="https://tayvensec.com/patch-management/">Tayven Cyber Security</a>
+    </p>
+</footer>
+</body>
+</html>
