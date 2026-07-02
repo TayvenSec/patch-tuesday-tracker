@@ -124,8 +124,8 @@ def _build_index(months: list) -> str:
             <div class="stats" style="margin-top:0.4rem">{badges_html}</div>
             <div class="links">
                 <a href="{m['prefix']}.html" class="btn btn-primary">View Details</a>
-                <a href="https://github.com/YOUR_USERNAME/patch-tuesday-tracker/blob/main/data/archive/{m['prefix']}-patch-draft.md" class="btn">Article Draft</a>
-                <a href="https://github.com/YOUR_USERNAME/patch-tuesday-tracker/blob/main/data/archive/{m['prefix']}-patch-data.json" class="btn">JSON</a>
+                <a href="https://github.com/TayvenSec/patch-tuesday-tracker/blob/main/data/archive/{m['prefix']}-patch-draft.md" class="btn">Article Draft</a>
+                <a href="https://github.com/TayvenSec/patch-tuesday-tracker/blob/main/data/archive/{m['prefix']}-patch-data.json" class="btn">JSON</a>
             </div>
         </div>""")
 
@@ -156,7 +156,7 @@ def _build_index(months: list) -> str:
 </div>
 <footer>
     <p>
-        <a href="https://github.com/YOUR_USERNAME/patch-tuesday-tracker">View on GitHub</a> · 
+        <a href="https://github.com/TayvenSec/patch-tuesday-tracker">View on GitHub</a> · 
         <a href="https://tayvensec.com/patch-management/">Tayven Cyber Security</a>
     </p>
 </footer>
@@ -244,16 +244,16 @@ def _build_month_page(combined: dict, prefix: str) -> str:
     {sections_html}
 
     <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
-        <a href="https://github.com/YOUR_USERNAME/patch-tuesday-tracker/blob/main/data/archive/{prefix}-patch-draft.md" 
+        <a href="https://github.com/TayvenSec/patch-tuesday-tracker/blob/main/data/archive/{prefix}-patch-draft.md" 
            class="btn btn-primary">📝 View Article Draft</a>
-        <a href="https://github.com/YOUR_USERNAME/patch-tuesday-tracker/blob/main/data/archive/{prefix}-patch-data.json" 
+        <a href="https://github.com/TayvenSec/patch-tuesday-tracker/blob/main/data/archive/{prefix}-patch-data.json" 
            class="btn">⬇️ Download JSON</a>
         <a href="index.html" class="btn">← All Months</a>
     </div>
 </div>
 <footer>
     <p>
-        <a href="https://github.com/YOUR_USERNAME/patch-tuesday-tracker">View on GitHub</a> · 
+        <a href="https://github.com/TayvenSec/patch-tuesday-tracker">View on GitHub</a> · 
         <a href="https://tayvensec.com/patch-management/">Tayven Cyber Security</a>
     </p>
 </footer>
