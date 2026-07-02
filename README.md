@@ -2,6 +2,8 @@
 
 Automated security patch data collector across 9 major platforms. Runs daily via GitHub Actions, builds a GitHub Pages site, and generates a markdown article draft in the style of the [Tayven Cyber Security Patch Management Series](https://tayvensec.com/patch-management/).
 
+Dashboard - https://tayvensec.github.io/patch-tuesday-tracker/index.html
+
 ## Platforms Covered
 
 | Platform | Source | Method |
