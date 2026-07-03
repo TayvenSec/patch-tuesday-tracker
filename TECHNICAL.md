@@ -61,7 +61,7 @@ Each returns a dict with at minimum: `platform`, `month`, `source`, `summary`, a
 | Collector | Source | Method | Notes |
 |---|---|---|---|
 | `msrc.py` | [MSRC CVRF API](https://api.msrc.microsoft.com) | REST API | Official Microsoft API, no auth. Fetches the monthly CVRF document (e.g. `2026-Jul`), parses CVEs, severities, and KB articles. |
-| `apple.py` | [Apple security releases](https://support.apple.com/en-us/111900) | HTML scrape | Parses the releases table, filters to current month, then fetches each release page to count CVEs. |
+| `apple.py` | [Apple security releases](https://support.apple.com/en-us/100100) | HTML scrape | Parses the releases table, filters to current month, then fetches each release page to count CVEs. |
 | `ubuntu.py` | [Ubuntu security notices](https://ubuntu.com/security/notices/rss.xml) | RSS | Official Canonical feed. Extracts USN IDs, CVEs, and severity keywords. |
 | `android.py` | [Android Security Bulletin](https://source.android.com/docs/security/bulletin) | HTML scrape | Fetches the month's bulletin directly (`/bulletin/YYYY-MM`), parses severity tables and patch levels. |
 | `redhat.py` | [RHSA Atom feed](https://access.redhat.com/security/team/updates/advisory.atom) | Atom | Filters to RHSA (security) advisories only, skipping RHBA/RHEA. Severity parsed from advisory titles. |
