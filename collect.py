@@ -36,7 +36,6 @@ def run_all_collectors(year: int = None, month: int = None) -> dict:
         "apple": apple,
         "ubuntu": ubuntu,
         "android": android,
-        "redhat": redhat,
         "debian": debian,
         "chromeos": chromeos,
         "palo_alto": palo_alto,
