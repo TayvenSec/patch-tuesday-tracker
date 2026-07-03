@@ -10,7 +10,7 @@ from datetime import datetime
 import re
 
 
-APPLE_URL = "https://support.apple.com/en-us/111900"
+APPLE_URL = "https://support.apple.com/en-us/100100"
 
 
 def collect(year: int = None, month: int = None) -> dict:
