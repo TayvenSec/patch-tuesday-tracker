@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-02T10:34:54.508265Z",
+  "collected_at": "2026-07-03T10:24:13.928715Z",
   "year": 2026,
   "month": 7,
   "month_label": "July 2026",
@@ -7,9 +7,219 @@
     "windows": {
       "platform": "windows",
       "month": "2026-Jul",
-      "updates": [],
-      "cves": [],
-      "summary": "No data available yet."
+      "source": "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Jul",
+      "total_cves": 25,
+      "critical_count": 5,
+      "important_count": 4,
+      "summary": "Microsoft released 25 CVEs for 2026-Jul. 5 Critical, 4 Important.",
+      "cves": [
+        {
+          "cve_id": "CVE-2026-53355",
+          "title": "net: rds: clear i_sends on setup unwind",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53347",
+          "title": "drm/virtio: Fix driver removal with disabled KMS",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53343",
+          "title": "ARM: 9475/1: entry: use byte load for KASAN VMAP stack shadow",
+          "severity": "Important",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53329",
+          "title": "drm/amd/display: Use krealloc_array() in dal_vector_reserve()",
+          "severity": "Important",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53352",
+          "title": "signal: clear JOBCTL_PENDING_MASK for caller in zap_other_threads()",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53349",
+          "title": "netfilter: nf_conntrack: destroy stale expectfn expectations on unregister",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-56149",
+          "title": "Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
+          "severity": "Moderate",
+          "products": [
+            "20188-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-14258",
+          "title": "Dhcpcd: dhcpcd infinite loop and out-of-bounds read via zero-length ipv6 nd option in router advertisement handling",
+          "severity": "Moderate",
+          "products": [
+            "21524-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53354",
+          "title": "arm64: errata: Mitigate TLBI errata on various Arm CPUs",
+          "severity": "Important",
+          "products": [
+            "21474-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-41579",
+          "title": "runc: Malicious image with /dev symlink can trigger limited host filesystem integrity violations",
+          "severity": "Low",
+          "products": [
+            "21537-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53345",
+          "title": "KVM: Don't WARN if memory is dirtied without a vCPU when the VM is dying",
+          "severity": "Moderate",
+          "products": [
+            "21474-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53332",
+          "title": "slimbus: qcom-ngd-ctrl: Register callbacks after creating the ngd",
+          "severity": "Moderate",
+          "products": [
+            "21474-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53336",
+          "title": "nvmem: layouts: onie-tlv: fix hang on unknown types",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53327",
+          "title": "debugobjects: Do not fill_pool() if pi_blocked_on",
+          "severity": "Moderate",
+          "products": [
+            "21474-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53337",
+          "title": "net: bonding: fix NULL pointer dereference in bond_do_ioctl()",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53356",
+          "title": "drm/i915/gem: Fix phys BO pread/pwrite with offset",
+          "severity": "Important",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53353",
+          "title": "hsr: Remove WARN_ONCE() in hsr_addr_is_self().",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53339",
+          "title": "i2c: qcom-cci: Fix NULL pointer dereference in cci_remove()",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-49090",
+          "title": "Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
+          "severity": "Moderate",
+          "products": [
+            "20188-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-53357",
+          "title": "Bluetooth: fix UAF in l2cap_sock_cleanup_listen() vs l2cap_conn_del()",
+          "severity": "Moderate",
+          "products": [
+            "21344-17084"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57100",
+          "title": "Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
+          "severity": "Critical",
+          "products": [
+            "21532"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-45499",
+          "title": "Azure OpenAI Elevation of Privilege Vulnerability",
+          "severity": "Critical",
+          "products": [
+            "12286"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-26145",
+          "title": "Microsoft Azure Synapse Elevation of Privilege Vulnerability",
+          "severity": "Critical",
+          "products": [
+            "12041"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-41106",
+          "title": "Microsoft 365 Copilot Elevation of Privilege Vulnerability",
+          "severity": "Critical",
+          "products": [
+            "16765"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-54998",
+          "title": "Microsoft Exchange Online Elevation of Privilege Vulnerability",
+          "severity": "Critical",
+          "products": [
+            "10133"
+          ]
+        }
+      ],
+      "kb_articles": [
+        {
+          "name": "Server Software",
+          "product_id": ""
+        }
+      ]
     },
     "apple": {
       "platform": "apple",
@@ -23,178 +233,229 @@
       "platform": "ubuntu",
       "month": "July 2026",
       "source": "https://ubuntu.com/security/notices/rss.xml",
-      "total_notices": 7,
-      "total_cves": 889,
-      "summary": "Ubuntu published 7 security notices in July 2026 covering 889 CVEs.",
+      "total_notices": 10,
+      "total_cves": 1755,
+      "summary": "Ubuntu published 10 security notices in July 2026 covering 1755 CVEs.",
       "notices": [
         {
-          "usn_id": "USN-8467-2",
-          "title": "USN-8467-2: Perl vulnerabilities",
+          "usn_id": "USN-8500-1",
+          "title": "USN-8500-1: Vim vulnerabilities",
           "date": "2026-07-02",
-          "link": "https://ubuntu.com/security/notices/USN-8467-2",
-          "severity": "Low",
-          "cve_count": 2,
+          "link": "https://ubuntu.com/security/notices/USN-8500-1",
+          "severity": "Unknown",
+          "cve_count": 8,
           "cves": [
-            "CVE-2026-42496",
-            "CVE-2026-8376"
+            "CVE-2026-57455",
+            "CVE-2026-55895",
+            "CVE-2026-55693",
+            "CVE-2026-35177",
+            "CVE-2026-57453",
+            "CVE-2026-57456",
+            "CVE-2026-57452",
+            "CVE-2026-55892"
           ],
-          "summary": "USN-8467-1 fixed vulnerabilities in Perl. This update provides the\ncorresponding fix for Perl on Ubuntu 25.10.\n\nOriginal advisory details:\nIt was discovered that Perl's Archive::Tar module incorrectly handled\nsymlink and hardlink targets during extraction. An attacker could use this\nissue to read or"
+          "summary": "It was discovered that Vim incorrectly handled path traversal in the\nzip.vim plugin. An attacker could possibly use this issue to overwrite\narbitrary files. This issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04\nLTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS.\n(CVE-2026-35177)\n\nIt was"
         },
         {
-          "usn_id": "USN-8493-1",
-          "title": "USN-8493-1: Linux kernel vulnerabilities",
-          "date": "2026-07-01",
-          "link": "https://ubuntu.com/security/notices/USN-8493-1",
+          "usn_id": "USN-8501-1",
+          "title": "USN-8501-1: Linux kernel vulnerabilities",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8501-1",
+          "severity": "Low",
+          "cve_count": 14,
+          "cves": [
+            "CVE-2026-43407",
+            "CVE-2026-45988",
+            "CVE-2026-43038",
+            "CVE-2026-43011",
+            "CVE-2026-46243",
+            "CVE-2026-43503",
+            "CVE-2026-31402",
+            "CVE-2026-31607",
+            "CVE-2026-43383",
+            "CVE-2026-23455",
+            "CVE-2024-35896",
+            "CVE-2026-43037",
+            "CVE-2026-31637",
+            "CVE-2026-46119"
+          ],
+          "summary": "It was discovered that a logic flaw existed in the XFRM ESP-in-TCP\nsubsystem in the Linux kernel when handling socket buffer fragments. This\nflaw is known as Fragnesia. A local attacker could use this to escalate\nprivileges, or possibly escape a container. (CVE-2026-43503)\n\nSeveral security issues w"
+        },
+        {
+          "usn_id": "USN-8493-2",
+          "title": "USN-8493-2: Linux kernel (Oracle) vulnerabilities",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8493-2",
           "severity": "Low",
           "cve_count": 64,
           "cves": [
-            "CVE-2026-43117",
-            "CVE-2026-23262",
-            "CVE-2026-31607",
-            "CVE-2026-31659",
-            "CVE-2026-23428",
+            "CVE-2026-23256",
+            "CVE-2026-23257",
+            "CVE-2026-46195",
+            "CVE-2026-31685",
+            "CVE-2026-43304",
+            "CVE-2026-23202",
+            "CVE-2026-31402",
+            "CVE-2026-43186",
+            "CVE-2026-31478",
+            "CVE-2026-43414",
+            "CVE-2026-23216",
+            "CVE-2026-43383",
             "CVE-2025-71222",
-            "CVE-2026-43114",
-            "CVE-2026-23206",
-            "CVE-2026-23450",
-            "CVE-2026-23182",
-            "CVE-2026-43341",
-            "CVE-2025-38201",
-            "CVE-2026-46119",
-            "CVE-2022-48816",
-            "CVE-2026-31668"
+            "CVE-2026-31637",
+            "CVE-2026-43406"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - RISC-V architecture;\n  - Cryptographic API;\n  - InfiniBand drivers;\n  - IOMMU subsystem;\n  - Network drivers;\n  - ST"
         },
         {
-          "usn_id": "USN-8492-1",
-          "title": "USN-8492-1: Linux kernel vulnerabilities",
-          "date": "2026-07-01",
-          "link": "https://ubuntu.com/security/notices/USN-8492-1",
+          "usn_id": "USN-8499-1",
+          "title": "USN-8499-1: Linux kernel (Xilinx) vulnerabilities",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8499-1",
           "severity": "Low",
-          "cve_count": 299,
+          "cve_count": 516,
           "cves": [
-            "CVE-2026-43117",
-            "CVE-2026-23241",
-            "CVE-2026-43230",
-            "CVE-2026-23233",
-            "CVE-2026-31607",
-            "CVE-2026-45916",
-            "CVE-2026-45861",
-            "CVE-2026-23450",
-            "CVE-2026-46249",
-            "CVE-2026-43264",
-            "CVE-2026-46244",
+            "CVE-2026-43196",
+            "CVE-2026-23257",
+            "CVE-2026-45947",
+            "CVE-2026-43167",
+            "CVE-2026-47337",
+            "CVE-2026-45981",
+            "CVE-2026-43304",
             "CVE-2026-43277",
-            "CVE-2026-43319",
-            "CVE-2026-45883",
-            "CVE-2026-43071"
+            "CVE-2026-43414",
+            "CVE-2025-68358",
+            "CVE-2026-43130",
+            "CVE-2026-45865",
+            "CVE-2026-23249",
+            "CVE-2026-43406",
+            "CVE-2026-23136"
+          ],
+          "summary": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privileges, or possibly escape\na container. (CVE-2026-31431)\n\nIt was discovered that the Linux kernel did"
+        },
+        {
+          "usn_id": "USN-8498-1",
+          "title": "USN-8498-1: Linux kernel (NVIDIA Tegra) vulnerabilities",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8498-1",
+          "severity": "Low",
+          "cve_count": 297,
+          "cves": [
+            "CVE-2026-43196",
+            "CVE-2026-43201",
+            "CVE-2026-45947",
+            "CVE-2026-23236",
+            "CVE-2026-43167",
+            "CVE-2026-43136",
+            "CVE-2026-45960",
+            "CVE-2026-45981",
+            "CVE-2026-43304",
+            "CVE-2026-43273",
+            "CVE-2026-31402",
+            "CVE-2026-43258",
+            "CVE-2026-31478",
+            "CVE-2026-43277",
+            "CVE-2026-43414"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
         },
         {
-          "usn_id": "USN-8488-1",
-          "title": "USN-8488-1: Linux kernel vulnerabilities",
-          "date": "2026-07-01",
-          "link": "https://ubuntu.com/security/notices/USN-8488-1",
+          "usn_id": "USN-8497-1",
+          "title": "USN-8497-1: Linux kernel (Low Latency) vulnerabilities",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8497-1",
+          "severity": "Low",
+          "cve_count": 321,
+          "cves": [
+            "CVE-2026-43196",
+            "CVE-2026-45947",
+            "CVE-2026-43167",
+            "CVE-2026-47337",
+            "CVE-2026-45981",
+            "CVE-2026-43304",
+            "CVE-2026-43277",
+            "CVE-2026-43414",
+            "CVE-2026-43130",
+            "CVE-2026-45865",
+            "CVE-2026-23249",
+            "CVE-2026-43406",
+            "CVE-2026-43218",
+            "CVE-2026-45885",
+            "CVE-2026-43133"
+          ],
+          "summary": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the\nRxRPC networking subsystem when processing paged fragments. A local\nattacker could"
+        },
+        {
+          "usn_id": "USN-8492-2",
+          "title": "USN-8492-2: Linux kernel vulnerabilities",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8492-2",
+          "severity": "Low",
+          "cve_count": 299,
+          "cves": [
+            "CVE-2026-43196",
+            "CVE-2026-43201",
+            "CVE-2026-45947",
+            "CVE-2026-23236",
+            "CVE-2026-43167",
+            "CVE-2026-43136",
+            "CVE-2026-45960",
+            "CVE-2026-45981",
+            "CVE-2026-43304",
+            "CVE-2026-43273",
+            "CVE-2026-31402",
+            "CVE-2026-43258",
+            "CVE-2026-31478",
+            "CVE-2026-43277",
+            "CVE-2026-43414"
+          ],
+          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
+        },
+        {
+          "usn_id": "USN-8496-1",
+          "title": "USN-8496-1: cifs-utils vulnerability",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8496-1",
+          "severity": "Unknown",
+          "cve_count": 0,
+          "cves": [],
+          "summary": "It was discovered that cifs-utils incorrectly dropped root privileges\nbefore looking up user information. A local attacker could possibly use\nthis issue to execute arbitrary code as the root user."
+        },
+        {
+          "usn_id": "USN-8488-2",
+          "title": "USN-8488-2: Linux kernel (Raspberry Pi) vulnerabilities",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8488-2",
           "severity": "Low",
           "cve_count": 236,
           "cves": [
-            "CVE-2026-31624",
-            "CVE-2026-46286",
-            "CVE-2026-31607",
-            "CVE-2026-31615",
-            "CVE-2026-31603",
-            "CVE-2026-46085",
-            "CVE-2026-31575",
-            "CVE-2026-46099",
-            "CVE-2026-46026",
-            "CVE-2026-46028",
-            "CVE-2026-46103",
-            "CVE-2026-43071",
-            "CVE-2026-31699",
-            "CVE-2026-31613",
-            "CVE-2026-46006"
+            "CVE-2026-46074",
+            "CVE-2026-46316",
+            "CVE-2026-31578",
+            "CVE-2026-43073",
+            "CVE-2026-46059",
+            "CVE-2026-46053",
+            "CVE-2026-46096",
+            "CVE-2026-46044",
+            "CVE-2026-46332",
+            "CVE-2026-46056",
+            "CVE-2026-31592",
+            "CVE-2026-46020",
+            "CVE-2026-43350",
+            "CVE-2026-46057",
+            "CVE-2026-46071"
           ],
           "summary": "It was discovered that some AMD processors did not properly clear data in\nthe floating point divider unit during speculative execution. A local\nattacker could use this to expose sensitive information. (CVE-2025-54505)\n\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could po"
         },
         {
-          "usn_id": "USN-8491-1",
-          "title": "USN-8491-1: Linux kernel (OEM) vulnerabilities",
-          "date": "2026-07-01",
-          "link": "https://ubuntu.com/security/notices/USN-8491-1",
-          "severity": "Low",
-          "cve_count": 62,
-          "cves": [
-            "CVE-2026-43117",
-            "CVE-2026-31607",
-            "CVE-2026-31659",
-            "CVE-2026-23428",
-            "CVE-2026-43114",
-            "CVE-2026-23450",
-            "CVE-2026-43341",
-            "CVE-2026-46244",
-            "CVE-2026-46119",
-            "CVE-2026-31668",
-            "CVE-2026-43378",
-            "CVE-2026-31418",
-            "CVE-2026-31682",
-            "CVE-2026-43083",
-            "CVE-2026-43071"
-          ],
-          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - x86 architecture;\n  - Block layer subsystem;\n  - Cryptographic API;\n  - DMA engine subsystem"
-        },
-        {
-          "usn_id": "USN-8490-1",
-          "title": "USN-8490-1: Linux kernel vulnerabilities",
-          "date": "2026-07-01",
-          "link": "https://ubuntu.com/security/notices/USN-8490-1",
-          "severity": "Low",
-          "cve_count": 61,
-          "cves": [
-            "CVE-2026-43117",
-            "CVE-2026-31607",
-            "CVE-2026-31659",
-            "CVE-2026-23428",
-            "CVE-2026-43114",
-            "CVE-2026-23450",
-            "CVE-2026-43341",
-            "CVE-2026-46244",
-            "CVE-2026-46119",
-            "CVE-2026-31668",
-            "CVE-2026-43378",
-            "CVE-2026-31418",
-            "CVE-2026-31682",
-            "CVE-2026-43083",
-            "CVE-2026-43071"
-          ],
-          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - Block layer subsystem;\n  - Cryptographic API;\n  - DMA engine subsystem;\n  - InfiniBand drive"
-        },
-        {
-          "usn_id": "USN-8489-1",
-          "title": "USN-8489-1: Linux kernel (OEM) vulnerabilities",
-          "date": "2026-07-01",
-          "link": "https://ubuntu.com/security/notices/USN-8489-1",
-          "severity": "Low",
-          "cve_count": 165,
-          "cves": [
-            "CVE-2026-46286",
-            "CVE-2026-46048",
-            "CVE-2026-46085",
-            "CVE-2026-46099",
-            "CVE-2026-46026",
-            "CVE-2026-46028",
-            "CVE-2026-46103",
-            "CVE-2026-46006",
-            "CVE-2026-46062",
-            "CVE-2026-46078",
-            "CVE-2026-46008",
-            "CVE-2026-46100",
-            "CVE-2026-46137",
-            "CVE-2026-46087",
-            "CVE-2026-47334"
-          ],
-          "summary": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the\nRxRPC networking subsystem when processing paged fragments. A local\nattacker could"
+          "usn_id": "USN-8495-1",
+          "title": "USN-8495-1: nghttp2 vulnerability",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8495-1",
+          "severity": "Unknown",
+          "cve_count": 0,
+          "cves": [],
+          "summary": "It was discovered that the nghttp2 nghttpx proxy incorrectly handled\nHTTP/1.1 Upgrade requests that included a Content-Length header and body.\nA remote attacker could possibly use this issue to perform HTTP request and\nresponse smuggling attacks against backend services."
         }
       ]
     },
