@@ -68,37 +68,37 @@ Canonical published **10 USNs** covering **1755 CVEs** this month.
 ### USN-8500-1 – USN-8500-1: Vim vulnerabilities
 **Severity:** Unknown  **CVEs:** 8
 [View USN](https://ubuntu.com/security/notices/USN-8500-1)
-**CVE IDs:** CVE-2026-57456, CVE-2026-55892, CVE-2026-57453, CVE-2026-55693, CVE-2026-35177, CVE-2026-57452
+**CVE IDs:** CVE-2026-57452, CVE-2026-55895, CVE-2026-55693, CVE-2026-57456, CVE-2026-35177, CVE-2026-57455
 
 ### USN-8501-1 – USN-8501-1: Linux kernel vulnerabilities
 **Severity:** Low  **CVEs:** 14
 [View USN](https://ubuntu.com/security/notices/USN-8501-1)
-**CVE IDs:** CVE-2026-46243, CVE-2024-35896, CVE-2026-23455, CVE-2026-31402, CVE-2026-43011, CVE-2026-31637
+**CVE IDs:** CVE-2026-43038, CVE-2026-31607, CVE-2026-23455, CVE-2026-31402, CVE-2026-43037, CVE-2026-46119
 
 ### USN-8493-2 – USN-8493-2: Linux kernel (Oracle) vulnerabilities
 **Severity:** Low  **CVEs:** 64
 [View USN](https://ubuntu.com/security/notices/USN-8493-2)
-**CVE IDs:** CVE-2026-23206, CVE-2026-31682, CVE-2026-31402, CVE-2026-43114, CVE-2026-46135, CVE-2025-37924
+**CVE IDs:** CVE-2025-71222, CVE-2026-23428, CVE-2026-43038, CVE-2026-43414, CVE-2026-43037, CVE-2026-23190
 
 ### USN-8499-1 – USN-8499-1: Linux kernel (Xilinx) vulnerabilities
 **Severity:** Low  **CVEs:** 516
 [View USN](https://ubuntu.com/security/notices/USN-8499-1)
-**CVE IDs:** CVE-2026-31682, CVE-2026-43262, CVE-2025-71196, CVE-2026-23026, CVE-2026-43211, CVE-2026-23021
+**CVE IDs:** CVE-2025-71222, CVE-2026-23084, CVE-2026-23242, CVE-2026-43156, CVE-2025-40149, CVE-2026-43501
 
 ### USN-8498-1 – USN-8498-1: Linux kernel (NVIDIA Tegra) vulnerabilities
 **Severity:** Low  **CVEs:** 297
 [View USN](https://ubuntu.com/security/notices/USN-8498-1)
-**CVE IDs:** CVE-2026-31682, CVE-2026-45872, CVE-2026-46115, CVE-2026-43384, CVE-2026-43262, CVE-2026-46267
+**CVE IDs:** CVE-2026-43231, CVE-2026-23428, CVE-2026-43130, CVE-2026-43414, CVE-2026-45881, CVE-2026-46259
 
 ### USN-8497-1 – USN-8497-1: Linux kernel (Low Latency) vulnerabilities
 **Severity:** Low  **CVEs:** 321
 [View USN](https://ubuntu.com/security/notices/USN-8497-1)
-**CVE IDs:** CVE-2026-31682, CVE-2026-43262, CVE-2026-43211, CVE-2025-71304, CVE-2026-43194, CVE-2026-43187
+**CVE IDs:** CVE-2026-23242, CVE-2026-43156, CVE-2026-43501, CVE-2026-45935, CVE-2026-47334, CVE-2026-43189
 
 ### USN-8492-2 – USN-8492-2: Linux kernel vulnerabilities
 **Severity:** Low  **CVEs:** 299
 [View USN](https://ubuntu.com/security/notices/USN-8492-2)
-**CVE IDs:** CVE-2026-31682, CVE-2026-45872, CVE-2026-46115, CVE-2026-43384, CVE-2026-43262, CVE-2026-46267
+**CVE IDs:** CVE-2026-43231, CVE-2026-23428, CVE-2026-43130, CVE-2026-43414, CVE-2026-45881, CVE-2026-46259
 
 ### USN-8496-1 – USN-8496-1: cifs-utils vulnerability
 **Severity:** Unknown  **CVEs:** 0
@@ -107,7 +107,7 @@ Canonical published **10 USNs** covering **1755 CVEs** this month.
 ### USN-8488-2 – USN-8488-2: Linux kernel (Raspberry Pi) vulnerabilities
 **Severity:** Low  **CVEs:** 236
 [View USN](https://ubuntu.com/security/notices/USN-8488-2)
-**CVE IDs:** CVE-2026-46029, CVE-2026-46068, CVE-2026-43491, CVE-2026-46115, CVE-2026-46091, CVE-2026-31605
+**CVE IDs:** CVE-2026-31579, CVE-2026-52907, CVE-2026-46014, CVE-2026-45999, CVE-2026-31587, CVE-2026-31594
 
 ### USN-8495-1 – USN-8495-1: nghttp2 vulnerability
 **Severity:** Unknown  **CVEs:** 0
@@ -118,20 +118,6 @@ Canonical published **10 USNs** covering **1755 CVEs** this month.
 - Run `sudo apt update && sudo apt upgrade` on all Ubuntu systems
 - Prioritise kernel USNs — may require reboot
 - Review USNs affecting your specific Ubuntu LTS version
-
-
----
-
-# Red Hat Security Advisories – July 2026
-
-Red Hat published **0 RHSAs** covering **0 CVEs** — Critical: 0, Important: 0.
-
-
-### Recommended Actions
-
-- Apply updates via `dnf update` or `yum update`
-- Prioritise Critical and Important RHSAs
-- RHEL subscribers can use Red Hat Satellite or Insights for fleet management
 
 
 ---
@@ -227,4 +213,4 @@ Cisco published **0 IOS/IOS XE advisories** — Critical: 0, High: 0. *(HTML scr
 
 
 ---
-*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-03T10:58:51.018331Z*
+*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-03T11:04:58.346690Z*
