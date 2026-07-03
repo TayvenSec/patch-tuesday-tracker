@@ -301,7 +301,6 @@ def generate(combined: dict = None) -> Path:
         ("apple", _apple_section),
         ("android", _android_section),
         ("ubuntu", _ubuntu_section),
-        ("redhat", _redhat_section),
         ("debian", _debian_section),
         ("chromeos", _chromeos_section),
         ("palo_alto", _palo_alto_section),
