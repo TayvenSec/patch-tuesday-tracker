@@ -9,7 +9,7 @@ Dashboard - https://tayvensec.github.io/patch-tuesday-tracker/index.html
 | Platform | Source | Method |
 |---|---|---|
 | Windows / Windows Server | [MSRC API](https://api.msrc.microsoft.com) | REST API (public) |
-| Apple (iOS, macOS, watchOS, tvOS) | [Apple HT201222](https://support.apple.com/en-us/111900) | HTML scrape |
+| Apple (iOS, macOS, watchOS, tvOS) | [Apple HT201222](https://support.apple.com/en-us/100100) | HTML scrape |
 | Android | [Android Security Bulletin](https://source.android.com/docs/security/bulletin) | HTML scrape |
 | Ubuntu | [Ubuntu USN RSS](https://usn.ubuntu.com/rss.xml) | RSS feed |
 | Red Hat | [RHSA Atom Feed](https://access.redhat.com/security/team/updates/advisory.atom) | RSS/Atom feed |
