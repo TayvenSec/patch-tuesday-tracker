@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-03T11:04:58.346690Z",
+  "collected_at": "2026-07-04T09:57:49.065053Z",
   "year": 2026,
   "month": 7,
   "month_label": "July 2026",
@@ -8,171 +8,11 @@
       "platform": "windows",
       "month": "2026-Jul",
       "source": "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Jul",
-      "total_cves": 25,
+      "total_cves": 354,
       "critical_count": 5,
-      "important_count": 4,
-      "summary": "Microsoft released 25 CVEs for 2026-Jul. 5 Critical, 4 Important.",
+      "important_count": 43,
+      "summary": "Microsoft released 354 CVEs for 2026-Jul. 5 Critical, 43 Important.",
       "cves": [
-        {
-          "cve_id": "CVE-2026-53355",
-          "title": "net: rds: clear i_sends on setup unwind",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53347",
-          "title": "drm/virtio: Fix driver removal with disabled KMS",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53343",
-          "title": "ARM: 9475/1: entry: use byte load for KASAN VMAP stack shadow",
-          "severity": "Important",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53329",
-          "title": "drm/amd/display: Use krealloc_array() in dal_vector_reserve()",
-          "severity": "Important",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53352",
-          "title": "signal: clear JOBCTL_PENDING_MASK for caller in zap_other_threads()",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53349",
-          "title": "netfilter: nf_conntrack: destroy stale expectfn expectations on unregister",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-56149",
-          "title": "Allocation of Resources Without Limits or Throttling in Elasticsearch Leading to Denial of Service",
-          "severity": "Moderate",
-          "products": [
-            "20188-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-14258",
-          "title": "Dhcpcd: dhcpcd infinite loop and out-of-bounds read via zero-length ipv6 nd option in router advertisement handling",
-          "severity": "Moderate",
-          "products": [
-            "21524-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53354",
-          "title": "arm64: errata: Mitigate TLBI errata on various Arm CPUs",
-          "severity": "Important",
-          "products": [
-            "21474-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-41579",
-          "title": "runc: Malicious image with /dev symlink can trigger limited host filesystem integrity violations",
-          "severity": "Low",
-          "products": [
-            "21537-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53345",
-          "title": "KVM: Don't WARN if memory is dirtied without a vCPU when the VM is dying",
-          "severity": "Moderate",
-          "products": [
-            "21474-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53332",
-          "title": "slimbus: qcom-ngd-ctrl: Register callbacks after creating the ngd",
-          "severity": "Moderate",
-          "products": [
-            "21474-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53336",
-          "title": "nvmem: layouts: onie-tlv: fix hang on unknown types",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53327",
-          "title": "debugobjects: Do not fill_pool() if pi_blocked_on",
-          "severity": "Moderate",
-          "products": [
-            "21474-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53337",
-          "title": "net: bonding: fix NULL pointer dereference in bond_do_ioctl()",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53356",
-          "title": "drm/i915/gem: Fix phys BO pread/pwrite with offset",
-          "severity": "Important",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53353",
-          "title": "hsr: Remove WARN_ONCE() in hsr_addr_is_self().",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53339",
-          "title": "i2c: qcom-cci: Fix NULL pointer dereference in cci_remove()",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-49090",
-          "title": "Uncontrolled Resource Consumption in Elasticsearch Leading to Denial of Service",
-          "severity": "Moderate",
-          "products": [
-            "20188-17084"
-          ]
-        },
-        {
-          "cve_id": "CVE-2026-53357",
-          "title": "Bluetooth: fix UAF in l2cap_sock_cleanup_listen() vs l2cap_conn_del()",
-          "severity": "Moderate",
-          "products": [
-            "21344-17084"
-          ]
-        },
         {
           "cve_id": "CVE-2026-57100",
           "title": "Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability",
@@ -206,12 +46,312 @@
           ]
         },
         {
-          "cve_id": "CVE-2026-54998",
-          "title": "Microsoft Exchange Online Elevation of Privilege Vulnerability",
-          "severity": "Critical",
+          "cve_id": "CVE-2026-13933",
+          "title": "Chromium: CVE-2026-13933 Insufficient policy enforcement in Passwords",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-14153",
+          "title": "Chromium: CVE-2026-14153 Inappropriate implementation in Glic",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-14125",
+          "title": "Chromium: CVE-2026-14125 Uninitialized Use in ANGLE",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-55945",
+          "title": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
+          "severity": "Moderate",
           "products": [
-            "10133"
+            "11655"
           ]
+        },
+        {
+          "cve_id": "CVE-2026-56645",
+          "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57975",
+          "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57983",
+          "title": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57984",
+          "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57985",
+          "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57987",
+          "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57988",
+          "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57992",
+          "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-57993",
+          "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-56646",
+          "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-58282",
+          "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-58283",
+          "title": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-58287",
+          "title": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-58299",
+          "title": "Microsoft Edge for Android Remote Code Execution Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-58522",
+          "title": "Microsoft Edge for Android Information Disclosure Vulnerability",
+          "severity": "Important",
+          "products": [
+            "11655"
+          ]
+        },
+        {
+          "cve_id": "CVE-2026-13775",
+          "title": "Chromium: CVE-2026-13775 Use after free in GPU",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13776",
+          "title": "Chromium: CVE-2026-13776 Type Confusion in Dawn",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13779",
+          "title": "Chromium: CVE-2026-13779 Use after free in Chromoting",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13780",
+          "title": "Chromium: CVE-2026-13780 Insufficient validation of untrusted input in ANGLE",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13781",
+          "title": "Chromium: CVE-2026-13781 Insufficient validation of untrusted input in Skia",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13782",
+          "title": "Chromium: CVE-2026-13782 Use after free in Browser",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13783",
+          "title": "Chromium: CVE-2026-13783 Use after free in Views",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13784",
+          "title": "Chromium: CVE-2026-13784 Use after free in Views",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13786",
+          "title": "Chromium: CVE-2026-13786 Use after free in Ozone",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13787",
+          "title": "Chromium: CVE-2026-13787 Use after free in Chromoting",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13790",
+          "title": "Chromium: CVE-2026-13790 Side-channel information leakage in Scroll",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13793",
+          "title": "Chromium: CVE-2026-13793 Insufficient policy enforcement in SVG",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13794",
+          "title": "Chromium: CVE-2026-13794 Insufficient validation of untrusted input in WebAppInstalls",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13797",
+          "title": "Chromium: CVE-2026-13797 Insufficient validation of untrusted input in Chromecast",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13801",
+          "title": "Chromium: CVE-2026-13801 Integer overflow in Chromecast",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13802",
+          "title": "Chromium: CVE-2026-13802 Use after free in Views",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13803",
+          "title": "Chromium: CVE-2026-13803 Type Confusion in Chrome Tabs",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13804",
+          "title": "Chromium: CVE-2026-13804 Use after free in Chromecast",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13810",
+          "title": "Chromium: CVE-2026-13810 Inappropriate implementation in Input",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13811",
+          "title": "Chromium: CVE-2026-13811 Use after free in IME",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13814",
+          "title": "Chromium: CVE-2026-13814 Use after free in Views",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13817",
+          "title": "Chromium: CVE-2026-13817 Insufficient validation of untrusted input in Glic",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13815",
+          "title": "Chromium: CVE-2026-13815 Use after free in Blink",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13820",
+          "title": "Chromium: CVE-2026-13820 Out of bounds read in Skia",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13821",
+          "title": "Chromium: CVE-2026-13821 Use after free in Canvas",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13823",
+          "title": "Chromium: CVE-2026-13823 Use after free in Glic",
+          "severity": "Unknown",
+          "products": []
+        },
+        {
+          "cve_id": "CVE-2026-13818",
+          "title": "Chromium: CVE-2026-13818 Inappropriate implementation in Passwords",
+          "severity": "Unknown",
+          "products": []
         }
       ],
       "kb_articles": [
@@ -234,9 +374,29 @@
       "month": "July 2026",
       "source": "https://ubuntu.com/security/notices/rss.xml",
       "total_notices": 10,
-      "total_cves": 1755,
-      "summary": "Ubuntu published 10 security notices in July 2026 covering 1755 CVEs.",
+      "total_cves": 1519,
+      "summary": "Ubuntu published 10 security notices in July 2026 covering 1519 CVEs.",
       "notices": [
+        {
+          "usn_id": "USN-8496-2",
+          "title": "USN-8496-2: cifs-utils regression",
+          "date": "2026-07-03",
+          "link": "https://ubuntu.com/security/notices/USN-8496-2",
+          "severity": "Unknown",
+          "cve_count": 0,
+          "cves": [],
+          "summary": "USN-8496-1 fixed a vulnerability in cifs-utils. Unfortunately, the fix\nintroduced a regression with Kerberos mounts. This update reverts the\nsecurity update until a complete fix is available.\n\nWe apologize for the inconvenience.\n\nOriginal advisory details:\n\n It was discovered that cifs-utils incorre"
+        },
+        {
+          "usn_id": "USN-8503-1",
+          "title": "USN-8503-1: ncurses vulnerability",
+          "date": "2026-07-02",
+          "link": "https://ubuntu.com/security/notices/USN-8503-1",
+          "severity": "Unknown",
+          "cve_count": 0,
+          "cves": [],
+          "summary": "It was discovered that ncurses incorrectly handled certain terminfo\nentries in the infocmp tool. An attacker could possibly use this issue\nto cause a denial of service via a crafted terminfo file.\n\nThe default compiler options for affected releases should reduce the\nvulnerability to a denial of serv"
+        },
         {
           "usn_id": "USN-8500-1",
           "title": "USN-8500-1: Vim vulnerabilities",
@@ -245,14 +405,14 @@
           "severity": "Unknown",
           "cve_count": 8,
           "cves": [
-            "CVE-2026-57452",
-            "CVE-2026-55895",
+            "CVE-2026-57453",
             "CVE-2026-55693",
-            "CVE-2026-57456",
-            "CVE-2026-35177",
-            "CVE-2026-57455",
             "CVE-2026-55892",
-            "CVE-2026-57453"
+            "CVE-2026-57455",
+            "CVE-2026-35177",
+            "CVE-2026-55895",
+            "CVE-2026-57452",
+            "CVE-2026-57456"
           ],
           "summary": "It was discovered that Vim incorrectly handled path traversal in the\nzip.vim plugin. An attacker could possibly use this issue to overwrite\narbitrary files. This issue only affected Ubuntu 14.04 LTS, Ubuntu 16.04\nLTS, Ubuntu 18.04 LTS, Ubuntu 20.04 LTS, and Ubuntu 22.04 LTS.\n(CVE-2026-35177)\n\nIt was"
         },
@@ -264,20 +424,20 @@
           "severity": "Low",
           "cve_count": 14,
           "cves": [
-            "CVE-2026-43038",
-            "CVE-2026-31607",
-            "CVE-2026-23455",
             "CVE-2026-31402",
+            "CVE-2026-43407",
+            "CVE-2026-43011",
             "CVE-2026-43037",
             "CVE-2026-46119",
-            "CVE-2026-43011",
-            "CVE-2026-43383",
-            "CVE-2026-43407",
+            "CVE-2026-43503",
             "CVE-2026-46243",
-            "CVE-2024-35896",
             "CVE-2026-31637",
+            "CVE-2026-23455",
+            "CVE-2026-43038",
+            "CVE-2026-43383",
             "CVE-2026-45988",
-            "CVE-2026-43503"
+            "CVE-2026-31607",
+            "CVE-2024-35896"
           ],
           "summary": "It was discovered that a logic flaw existed in the XFRM ESP-in-TCP\nsubsystem in the Linux kernel when handling socket buffer fragments. This\nflaw is known as Fragnesia. A local attacker could use this to escalate\nprivileges, or possibly escape a container. (CVE-2026-43503)\n\nSeveral security issues w"
         },
@@ -289,21 +449,21 @@
           "severity": "Low",
           "cve_count": 64,
           "cves": [
-            "CVE-2025-71222",
-            "CVE-2026-23428",
-            "CVE-2026-43038",
-            "CVE-2026-43414",
-            "CVE-2026-43037",
-            "CVE-2026-23190",
-            "CVE-2026-31669",
-            "CVE-2026-23206",
-            "CVE-2026-31668",
-            "CVE-2023-53673",
             "CVE-2025-37822",
-            "CVE-2025-71089",
-            "CVE-2026-23176",
-            "CVE-2026-43501",
-            "CVE-2026-43114"
+            "CVE-2025-68214",
+            "CVE-2026-23262",
+            "CVE-2026-31478",
+            "CVE-2026-43117",
+            "CVE-2026-46243",
+            "CVE-2025-38201",
+            "CVE-2026-43383",
+            "CVE-2026-31659",
+            "CVE-2026-43493",
+            "CVE-2026-31657",
+            "CVE-2026-31418",
+            "CVE-2026-43186",
+            "CVE-2026-23180",
+            "CVE-2026-31685"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - RISC-V architecture;\n  - Cryptographic API;\n  - InfiniBand drivers;\n  - IOMMU subsystem;\n  - Network drivers;\n  - ST"
         },
@@ -315,21 +475,21 @@
           "severity": "Low",
           "cve_count": 516,
           "cves": [
-            "CVE-2025-71222",
-            "CVE-2026-23084",
-            "CVE-2026-23242",
-            "CVE-2026-43156",
-            "CVE-2025-40149",
-            "CVE-2026-43501",
-            "CVE-2026-23049",
-            "CVE-2026-45935",
-            "CVE-2026-47334",
-            "CVE-2026-23204",
-            "CVE-2026-43189",
-            "CVE-2026-46028",
-            "CVE-2026-43199",
-            "CVE-2026-46300",
-            "CVE-2026-31637"
+            "CVE-2026-23095",
+            "CVE-2026-23038",
+            "CVE-2026-47332",
+            "CVE-2026-45904",
+            "CVE-2026-23267",
+            "CVE-2026-45869",
+            "CVE-2026-43271",
+            "CVE-2026-43159",
+            "CVE-2026-23050",
+            "CVE-2025-71196",
+            "CVE-2025-71180",
+            "CVE-2026-43184",
+            "CVE-2026-45851",
+            "CVE-2026-23121",
+            "CVE-2025-71198"
           ],
           "summary": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privileges, or possibly escape\na container. (CVE-2026-31431)\n\nIt was discovered that the Linux kernel did"
         },
@@ -341,21 +501,21 @@
           "severity": "Low",
           "cve_count": 297,
           "cves": [
-            "CVE-2026-43231",
-            "CVE-2026-23428",
-            "CVE-2026-43130",
-            "CVE-2026-43414",
-            "CVE-2026-45881",
-            "CVE-2026-46259",
-            "CVE-2026-23242",
-            "CVE-2026-45895",
-            "CVE-2026-45976",
-            "CVE-2026-43255",
-            "CVE-2026-31669",
-            "CVE-2026-43250",
-            "CVE-2026-43156",
-            "CVE-2026-43257",
-            "CVE-2026-43128"
+            "CVE-2026-43226",
+            "CVE-2026-45856",
+            "CVE-2026-45964",
+            "CVE-2026-43194",
+            "CVE-2026-46270",
+            "CVE-2026-43207",
+            "CVE-2026-43320",
+            "CVE-2026-45904",
+            "CVE-2026-23267",
+            "CVE-2025-71229",
+            "CVE-2026-43196",
+            "CVE-2026-43218",
+            "CVE-2026-43239",
+            "CVE-2026-43383",
+            "CVE-2026-31659"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
         },
@@ -367,21 +527,21 @@
           "severity": "Low",
           "cve_count": 321,
           "cves": [
-            "CVE-2026-23242",
-            "CVE-2026-43156",
-            "CVE-2026-43501",
-            "CVE-2026-45935",
-            "CVE-2026-47334",
-            "CVE-2026-43189",
-            "CVE-2026-43199",
-            "CVE-2026-46300",
-            "CVE-2026-31637",
-            "CVE-2026-23230",
-            "CVE-2026-43270",
-            "CVE-2026-43170",
-            "CVE-2026-43284",
-            "CVE-2026-43190",
-            "CVE-2026-43297"
+            "CVE-2026-47332",
+            "CVE-2026-45904",
+            "CVE-2026-23267",
+            "CVE-2026-45869",
+            "CVE-2026-43271",
+            "CVE-2026-43159",
+            "CVE-2026-43184",
+            "CVE-2026-45851",
+            "CVE-2026-46265",
+            "CVE-2026-23392",
+            "CVE-2026-45921",
+            "CVE-2026-45988",
+            "CVE-2026-43317",
+            "CVE-2026-45883",
+            "CVE-2026-47337"
           ],
           "summary": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the\nRxRPC networking subsystem when processing paged fragments. A local\nattacker could"
         },
@@ -393,21 +553,21 @@
           "severity": "Low",
           "cve_count": 299,
           "cves": [
-            "CVE-2026-43231",
-            "CVE-2026-23428",
-            "CVE-2026-43130",
-            "CVE-2026-43414",
-            "CVE-2026-45881",
-            "CVE-2026-46259",
-            "CVE-2026-23242",
-            "CVE-2026-45895",
-            "CVE-2026-45976",
-            "CVE-2026-43255",
-            "CVE-2026-31669",
-            "CVE-2026-43250",
-            "CVE-2026-43156",
-            "CVE-2026-43257",
-            "CVE-2026-43128"
+            "CVE-2026-43226",
+            "CVE-2026-45856",
+            "CVE-2026-45964",
+            "CVE-2026-43194",
+            "CVE-2026-46270",
+            "CVE-2026-43207",
+            "CVE-2026-43320",
+            "CVE-2026-45904",
+            "CVE-2026-23267",
+            "CVE-2025-71229",
+            "CVE-2026-43196",
+            "CVE-2026-43218",
+            "CVE-2026-43239",
+            "CVE-2026-43383",
+            "CVE-2026-31659"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
         },
@@ -420,42 +580,6 @@
           "cve_count": 0,
           "cves": [],
           "summary": "It was discovered that cifs-utils incorrectly dropped root privileges\nbefore looking up user information. A local attacker could possibly use\nthis issue to execute arbitrary code as the root user."
-        },
-        {
-          "usn_id": "USN-8488-2",
-          "title": "USN-8488-2: Linux kernel (Raspberry Pi) vulnerabilities",
-          "date": "2026-07-02",
-          "link": "https://ubuntu.com/security/notices/USN-8488-2",
-          "severity": "Low",
-          "cve_count": 236,
-          "cves": [
-            "CVE-2026-31579",
-            "CVE-2026-52907",
-            "CVE-2026-46014",
-            "CVE-2026-45999",
-            "CVE-2026-31587",
-            "CVE-2026-31594",
-            "CVE-2026-43499",
-            "CVE-2026-31585",
-            "CVE-2026-31701",
-            "CVE-2026-46045",
-            "CVE-2026-46102",
-            "CVE-2026-46079",
-            "CVE-2026-52904",
-            "CVE-2026-31617",
-            "CVE-2026-46044"
-          ],
-          "summary": "It was discovered that some AMD processors did not properly clear data in\nthe floating point divider unit during speculative execution. A local\nattacker could use this to expose sensitive information. (CVE-2025-54505)\n\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could po"
-        },
-        {
-          "usn_id": "USN-8495-1",
-          "title": "USN-8495-1: nghttp2 vulnerability",
-          "date": "2026-07-02",
-          "link": "https://ubuntu.com/security/notices/USN-8495-1",
-          "severity": "Unknown",
-          "cve_count": 0,
-          "cves": [],
-          "summary": "It was discovered that the nghttp2 nghttpx proxy incorrectly handled\nHTTP/1.1 Upgrade requests that included a Content-Length header and body.\nA remote attacker could possibly use this issue to perform HTTP request and\nresponse smuggling attacks against backend services."
         }
       ]
     },
