@@ -75,37 +75,37 @@ Canonical published **10 USNs** covering **1519 CVEs** this month.
 ### USN-8500-1 – USN-8500-1: Vim vulnerabilities
 **Severity:** Unknown  **CVEs:** 8
 [View USN](https://ubuntu.com/security/notices/USN-8500-1)
-**CVE IDs:** CVE-2026-57453, CVE-2026-55693, CVE-2026-55892, CVE-2026-57455, CVE-2026-35177, CVE-2026-55895
+**CVE IDs:** CVE-2026-57456, CVE-2026-55895, CVE-2026-57455, CVE-2026-35177, CVE-2026-57453, CVE-2026-55693
 
 ### USN-8501-1 – USN-8501-1: Linux kernel vulnerabilities
 **Severity:** Low  **CVEs:** 14
 [View USN](https://ubuntu.com/security/notices/USN-8501-1)
-**CVE IDs:** CVE-2026-31402, CVE-2026-43407, CVE-2026-43011, CVE-2026-43037, CVE-2026-46119, CVE-2026-43503
+**CVE IDs:** CVE-2026-43383, CVE-2026-43011, CVE-2026-31607, CVE-2026-46119, CVE-2026-43503, CVE-2026-45988
 
 ### USN-8493-2 – USN-8493-2: Linux kernel (Oracle) vulnerabilities
 **Severity:** Low  **CVEs:** 64
 [View USN](https://ubuntu.com/security/notices/USN-8493-2)
-**CVE IDs:** CVE-2025-37822, CVE-2025-68214, CVE-2026-23262, CVE-2026-31478, CVE-2026-43117, CVE-2026-46243
+**CVE IDs:** CVE-2026-23450, CVE-2026-23278, CVE-2026-31478, CVE-2026-43406, CVE-2026-23257, CVE-2025-68214
 
 ### USN-8499-1 – USN-8499-1: Linux kernel (Xilinx) vulnerabilities
 **Severity:** Low  **CVEs:** 516
 [View USN](https://ubuntu.com/security/notices/USN-8499-1)
-**CVE IDs:** CVE-2026-23095, CVE-2026-23038, CVE-2026-47332, CVE-2026-45904, CVE-2026-23267, CVE-2026-45869
+**CVE IDs:** CVE-2026-23087, CVE-2026-45978, CVE-2025-71238, CVE-2026-43203, CVE-2026-23235, CVE-2026-23272
 
 ### USN-8498-1 – USN-8498-1: Linux kernel (NVIDIA Tegra) vulnerabilities
 **Severity:** Low  **CVEs:** 297
 [View USN](https://ubuntu.com/security/notices/USN-8498-1)
-**CVE IDs:** CVE-2026-43226, CVE-2026-45856, CVE-2026-45964, CVE-2026-43194, CVE-2026-46270, CVE-2026-43207
+**CVE IDs:** CVE-2026-23450, CVE-2025-71239, CVE-2026-45978, CVE-2025-71286, CVE-2026-45859, CVE-2026-46251
 
 ### USN-8497-1 – USN-8497-1: Linux kernel (Low Latency) vulnerabilities
 **Severity:** Low  **CVEs:** 321
 [View USN](https://ubuntu.com/security/notices/USN-8497-1)
-**CVE IDs:** CVE-2026-47332, CVE-2026-45904, CVE-2026-23267, CVE-2026-45869, CVE-2026-43271, CVE-2026-43159
+**CVE IDs:** CVE-2026-45978, CVE-2025-71238, CVE-2026-43203, CVE-2026-23235, CVE-2026-23272, CVE-2026-45935
 
 ### USN-8492-2 – USN-8492-2: Linux kernel vulnerabilities
 **Severity:** Low  **CVEs:** 299
 [View USN](https://ubuntu.com/security/notices/USN-8492-2)
-**CVE IDs:** CVE-2026-43226, CVE-2026-45856, CVE-2026-45964, CVE-2026-43194, CVE-2026-46270, CVE-2026-43207
+**CVE IDs:** CVE-2026-23450, CVE-2025-71239, CVE-2026-45978, CVE-2025-71286, CVE-2026-45859, CVE-2026-46251
 
 ### USN-8496-1 – USN-8496-1: cifs-utils vulnerability
 **Severity:** Unknown  **CVEs:** 0
@@ -211,4 +211,4 @@ Cisco published **0 IOS/IOS XE advisories** — Critical: 0, High: 0. *(HTML scr
 
 
 ---
-*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-04T09:57:49.065053Z*
+*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-05T10:01:31.586176Z*
