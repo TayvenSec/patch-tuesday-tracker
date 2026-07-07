@@ -1,6 +1,6 @@
 # JULY 2026 SECURITY PATCH ROUNDUP – Windows, iOS, macOS, Android, Linux & More
 
-July 2026's patch cycle brings updates across all major platforms. This month's roundup covers Windows, Apple, Android, Ubuntu, Red Hat, Debian, ChromeOS, Palo Alto Networks, and Cisco IOS/IOS XE. Combined, this month addresses approximately **1893+ CVEs** across the ecosystem.
+July 2026's patch cycle brings updates across all major platforms. This month's roundup covers Windows, Apple, Android, Ubuntu, Red Hat, Debian, ChromeOS, Palo Alto Networks, and Cisco IOS/IOS XE. Combined, this month addresses approximately **720+ CVEs** across the ecosystem.
 
 Below is the full breakdown.
 
@@ -8,7 +8,7 @@ Below is the full breakdown.
 
 # Windows Updates – 2026-Jul
 
-Microsoft addressed **375 CVEs** this month — **4 Critical** and **8 Important**.
+Microsoft addressed **380 CVEs** this month — **5 Critical** and **16 Important**.
 
 
 ## Key KB Articles
@@ -17,6 +17,7 @@ Microsoft addressed **375 CVEs** this month — **4 Critical** and **8 Important
 
 ## Critical CVEs
 
+- **CVE-2026-9547** — SSH improper host validation
 - **CVE-2026-57100** — Microsoft Entra Provisioning Service Elevation of Privilege Vulnerability
 - **CVE-2026-45499** — Azure OpenAI Elevation of Privilege Vulnerability
 - **CVE-2026-26145** — Microsoft Azure Synapse Elevation of Privilege Vulnerability
@@ -58,59 +59,58 @@ Google's July 2026 bulletin addresses **0 CVEs** across Framework, System, Kerne
 
 # Ubuntu Security Notices – July 2026
 
-Canonical published **10 USNs** covering **1518 CVEs** this month.
+Canonical published **10 USNs** covering **340 CVEs** this month.
 
 
 ## Key Security Notices
 
 
+### USN-8514-1 – USN-8514-1: OpenSSH vulnerability
+**Severity:** Unknown  **CVEs:** 0
+[View USN](https://ubuntu.com/security/notices/USN-8514-1)
+
+### USN-8502-1 – USN-8502-1: GnuTLS vulnerabilities
+**Severity:** Unknown  **CVEs:** 10
+[View USN](https://ubuntu.com/security/notices/USN-8502-1)
+**CVE IDs:** CVE-2026-42009, CVE-2026-3833, CVE-2024-0553, CVE-2026-42010, CVE-2024-12243, CVE-2026-5260
+
+### USN-8513-1 – USN-8513-1: PHP vulnerabilities
+**Severity:** Unknown  **CVEs:** 3
+[View USN](https://ubuntu.com/security/notices/USN-8513-1)
+**CVE IDs:** CVE-2025-14179, CVE-2026-6722, CVE-2026-7261
+
+### USN-8512-1 – USN-8512-1: Gzip vulnerabilities
+**Severity:** Unknown  **CVEs:** 2
+[View USN](https://ubuntu.com/security/notices/USN-8512-1)
+**CVE IDs:** CVE-2026-41991, CVE-2026-41992
+
+### USN-8511-1 – USN-8511-1: socat vulnerabilities
+**Severity:** Unknown  **CVEs:** 2
+[View USN](https://ubuntu.com/security/notices/USN-8511-1)
+**CVE IDs:** CVE-2024-54661, CVE-2026-56123
+
+### USN-8510-1 – USN-8510-1: tar vulnerability
+**Severity:** Unknown  **CVEs:** 0
+[View USN](https://ubuntu.com/security/notices/USN-8510-1)
+
+### USN-8509-1 – USN-8509-1: Python vulnerabilities
+**Severity:** Low  **CVEs:** 17
+[View USN](https://ubuntu.com/security/notices/USN-8509-1)
+**CVE IDs:** CVE-2026-9669, CVE-2025-13462, CVE-2026-2297, CVE-2026-6019, CVE-2026-3644, CVE-2026-4786
+
+### USN-8506-1 – USN-8506-1: Request Tracker vulnerabilities
+**Severity:** Unknown  **CVEs:** 7
+[View USN](https://ubuntu.com/security/notices/USN-8506-1)
+**CVE IDs:** CVE-2026-44229, CVE-2026-6841, CVE-2026-41076, CVE-2026-41075, CVE-2026-44231, CVE-2026-41073
+
+### USN-8505-1 – USN-8505-1: Parsl vulnerability
+**Severity:** Unknown  **CVEs:** 0
+[View USN](https://ubuntu.com/security/notices/USN-8505-1)
+
 ### USN-8492-3 – USN-8492-3: Linux kernel (Raspberry Pi Real-time) vulnerabilities
 **Severity:** Low  **CVEs:** 299
 [View USN](https://ubuntu.com/security/notices/USN-8492-3)
-**CVE IDs:** CVE-2026-43156, CVE-2026-43173, CVE-2026-45851, CVE-2026-43194, CVE-2026-43244, CVE-2026-45972
-
-### USN-8508-1 – USN-8508-1: Linux kernel (NVIDIA) vulnerabilities
-**Severity:** Low  **CVEs:** 84
-[View USN](https://ubuntu.com/security/notices/USN-8508-1)
-**CVE IDs:** CVE-2026-23278, CVE-2026-23428, CVE-2026-31402, CVE-2026-23112, CVE-2026-31448, CVE-2026-23450
-
-### USN-8507-1 – USN-8507-1: Linux kernel (NVIDIA) vulnerabilities
-**Severity:** Low  **CVEs:** 236
-[View USN](https://ubuntu.com/security/notices/USN-8507-1)
-**CVE IDs:** CVE-2026-31686, CVE-2026-46030, CVE-2026-31621, CVE-2026-31615, CVE-2026-31574, CVE-2026-31577
-
-### USN-8496-2 – USN-8496-2: cifs-utils regression
-**Severity:** Unknown  **CVEs:** 0
-[View USN](https://ubuntu.com/security/notices/USN-8496-2)
-
-### USN-8503-1 – USN-8503-1: ncurses vulnerability
-**Severity:** Unknown  **CVEs:** 0
-[View USN](https://ubuntu.com/security/notices/USN-8503-1)
-
-### USN-8500-1 – USN-8500-1: Vim vulnerabilities
-**Severity:** Unknown  **CVEs:** 8
-[View USN](https://ubuntu.com/security/notices/USN-8500-1)
-**CVE IDs:** CVE-2026-55693, CVE-2026-57455, CVE-2026-55892, CVE-2026-35177, CVE-2026-57456, CVE-2026-55895
-
-### USN-8501-1 – USN-8501-1: Linux kernel vulnerabilities
-**Severity:** Low  **CVEs:** 14
-[View USN](https://ubuntu.com/security/notices/USN-8501-1)
-**CVE IDs:** CVE-2024-35896, CVE-2026-45988, CVE-2026-46243, CVE-2026-43383, CVE-2026-31402, CVE-2026-43038
-
-### USN-8493-2 – USN-8493-2: Linux kernel (Oracle) vulnerabilities
-**Severity:** Low  **CVEs:** 64
-[View USN](https://ubuntu.com/security/notices/USN-8493-2)
-**CVE IDs:** CVE-2026-46043, CVE-2026-46135, CVE-2026-31478, CVE-2026-43304, CVE-2026-23278, CVE-2026-31649
-
-### USN-8499-1 – USN-8499-1: Linux kernel (Xilinx) vulnerabilities
-**Severity:** Low  **CVEs:** 516
-[View USN](https://ubuntu.com/security/notices/USN-8499-1)
-**CVE IDs:** CVE-2026-43173, CVE-2026-43194, CVE-2026-43244, CVE-2026-22998, CVE-2026-43205, CVE-2026-43302
-
-### USN-8498-1 – USN-8498-1: Linux kernel (NVIDIA Tegra) vulnerabilities
-**Severity:** Low  **CVEs:** 297
-[View USN](https://ubuntu.com/security/notices/USN-8498-1)
-**CVE IDs:** CVE-2026-43156, CVE-2026-43173, CVE-2026-45851, CVE-2026-43194, CVE-2026-43244, CVE-2026-45972
+**CVE IDs:** CVE-2025-71232, CVE-2026-43269, CVE-2026-43313, CVE-2026-43200, CVE-2026-43264, CVE-2026-43256
 
 ### Recommended Actions
 
@@ -136,8 +136,13 @@ Debian published **0 DSAs** covering **0 CVEs** this month.
 
 # Chrome OS Updates – July 2026
 
-Google released **0 ChromeOS updates** covering **0 CVEs** this month.
+Google released **1 ChromeOS updates** covering **0 CVEs** this month.
 
+
+## Stable Channel Update for ChromeOS / ChromeOS Flex
+**Date:** 2026-07-06  **CVEs:** 0
+**Version(s):** 149.0.7827.232
+[View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-chromeos.html)
 
 ### Recommended Actions
 
@@ -212,4 +217,4 @@ Cisco published **0 IOS/IOS XE advisories** — Critical: 0, High: 0. *(HTML scr
 
 
 ---
-*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-06T11:53:31.647115Z*
+*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-07T10:43:15.913525Z*
