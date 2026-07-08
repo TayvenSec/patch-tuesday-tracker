@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-07T10:43:15.913525Z",
+  "collected_at": "2026-07-08T10:04:19.017966Z",
   "year": 2026,
   "month": 7,
   "month_label": "July 2026",
@@ -10,8 +10,8 @@
       "source": "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Jul",
       "total_cves": 380,
       "critical_count": 6,
-      "important_count": 55,
-      "summary": "Microsoft released 380 CVEs for 2026-Jul. 6 Critical, 55 Important.",
+      "important_count": 56,
+      "summary": "Microsoft released 380 CVEs for 2026-Jul. 6 Critical, 56 Important.",
       "cves": [
         {
           "cve_id": "CVE-2026-53355",
@@ -140,12 +140,13 @@
         {
           "cve_id": "CVE-2026-8458",
           "title": "wrong reuse for different services",
-          "severity": "Unknown",
+          "severity": "Moderate",
           "products": [
+            "21549-17084",
+            "21491-17084",
             "21270-17084",
             "21500-17084",
-            "21514-17084",
-            "21021-17084"
+            "21514-17084"
           ]
         },
         {
@@ -238,8 +239,10 @@
         {
           "cve_id": "CVE-2026-53359",
           "title": "KVM: x86: Fix shadow paging use-after-free due to unexpected role",
-          "severity": "Unknown",
-          "products": []
+          "severity": "Important",
+          "products": [
+            "21474-17084"
+          ]
         },
         {
           "cve_id": "CVE-2026-14355",
@@ -469,9 +472,19 @@
       "month": "July 2026",
       "source": "https://ubuntu.com/security/notices/rss.xml",
       "total_notices": 10,
-      "total_cves": 340,
-      "summary": "Ubuntu published 10 security notices in July 2026 covering 340 CVEs.",
+      "total_cves": 41,
+      "summary": "Ubuntu published 10 security notices in July 2026 covering 41 CVEs.",
       "notices": [
+        {
+          "usn_id": "USN-8515-1",
+          "title": "USN-8515-1: Addressable vulnerability",
+          "date": "2026-07-07",
+          "link": "https://ubuntu.com/security/notices/USN-8515-1",
+          "severity": "Unknown",
+          "cve_count": 0,
+          "cves": [],
+          "summary": "It was discovered that Addressable incorrectly handled certain URI\ntemplates, generating regular expressions vulnerable to catastrophic\nbacktracking. An attacker could use this issue to craft a URI that, when matched\nagainst a vulnerable template, causes excessive resource consumption,\nleading to a"
+        },
         {
           "usn_id": "USN-8514-1",
           "title": "USN-8514-1: OpenSSH vulnerability",
@@ -490,16 +503,16 @@
           "severity": "Unknown",
           "cve_count": 10,
           "cves": [
-            "CVE-2026-42009",
             "CVE-2026-3833",
-            "CVE-2024-0553",
-            "CVE-2026-42010",
+            "CVE-2025-14831",
             "CVE-2024-12243",
-            "CVE-2026-5260",
-            "CVE-2026-33845",
+            "CVE-2024-0553",
+            "CVE-2026-42009",
             "CVE-2026-33846",
             "CVE-2025-9820",
-            "CVE-2025-14831"
+            "CVE-2026-42010",
+            "CVE-2026-33845",
+            "CVE-2026-5260"
           ],
           "summary": "It was discovered that GnuTLS had a timing side-channel when processing\nmalformed ciphertexts in RSA-PSK ClientKeyExchange. A remote attacker\ncould possibly use this issue to recover sensitive information. This\nissue only affected Ubuntu 18.04 LTS. (CVE-2024-0553)\n\nBing Shi discovered that GnuTLS in"
         },
@@ -511,9 +524,9 @@
           "severity": "Unknown",
           "cve_count": 3,
           "cves": [
+            "CVE-2026-7261",
             "CVE-2025-14179",
-            "CVE-2026-6722",
-            "CVE-2026-7261"
+            "CVE-2026-6722"
           ],
           "summary": "It was discovered that PHP incorrectly handled SOAP object deduplication\nwhen processing apache:Map nodes with duplicate keys. An attacker could\npossibly use this to cause a use-after-free, resulting in remote code\nexecution. (CVE-2026-6722)\n\nIt was discovered that PHP incorrectly handled SOAP reque"
         },
@@ -525,8 +538,8 @@
           "severity": "Unknown",
           "cve_count": 2,
           "cves": [
-            "CVE-2026-41991",
-            "CVE-2026-41992"
+            "CVE-2026-41992",
+            "CVE-2026-41991"
           ],
           "summary": "It was discovered that Gzip's gzexe utility handled temporary files in an\ninsecure manner. When the mktemp utility was not available, gzexe\nconstructed a temporary file path based on the process ID, which could be\npredicted. A local attacker could possibly use this issue to overwrite\narbitrary files"
         },
@@ -561,21 +574,21 @@
           "severity": "Low",
           "cve_count": 17,
           "cves": [
-            "CVE-2026-9669",
-            "CVE-2025-13462",
+            "CVE-2026-5713",
+            "CVE-2026-4224",
             "CVE-2026-2297",
-            "CVE-2026-6019",
             "CVE-2026-3644",
+            "CVE-2026-1299",
+            "CVE-2026-4519",
+            "CVE-2025-69534",
+            "CVE-2026-3276",
+            "CVE-2026-1502",
+            "CVE-2021-4189",
+            "CVE-2026-6100",
+            "CVE-2026-7774",
             "CVE-2026-4786",
             "CVE-2026-8328",
-            "CVE-2026-3276",
-            "CVE-2026-4224",
-            "CVE-2025-69534",
-            "CVE-2026-5713",
-            "CVE-2026-7774",
-            "CVE-2026-1502",
-            "CVE-2026-6100",
-            "CVE-2026-4519"
+            "CVE-2026-6019"
           ],
           "summary": "It was discovered that Python incorrectly normalized paths in the tarfile\nmodule. An attacker could possibly use this issue to bypass path\nrestrictions. This issue only affected Ubuntu 22.04 LTS and Ubuntu 24.04\nLTS. (CVE-2025-13462)\n\nIt was discovered that Python's HTMLParser incorrectly handled ce"
         },
@@ -588,11 +601,11 @@
           "cve_count": 7,
           "cves": [
             "CVE-2026-44229",
-            "CVE-2026-6841",
-            "CVE-2026-41076",
             "CVE-2026-41075",
             "CVE-2026-44231",
+            "CVE-2026-6841",
             "CVE-2026-41073",
+            "CVE-2026-41076",
             "CVE-2026-44230"
           ],
           "summary": "Aleksander Iwicki discovered that Request Tracker did not properly sanitize\nthe search \"Page\" URL parameter. A remote attacker could possibly use this\nissue to conduct a reflected cross-site scripting attack. (CVE-2026-6841)\n\nIt was discovered that Request Tracker did not properly sanitize user-\ncon"
@@ -606,32 +619,6 @@
           "cve_count": 0,
           "cves": [],
           "summary": "It was discovered that Parsl incorrectly constructed SQL queries using\nunsafe string formatting with user-supplied input in the parsl-visualize\ncomponent. A remote attacker could possibly use this issue to perform SQL\ninjection attacks, leading to data exfiltration or a denial of service."
-        },
-        {
-          "usn_id": "USN-8492-3",
-          "title": "USN-8492-3: Linux kernel (Raspberry Pi Real-time) vulnerabilities",
-          "date": "2026-07-06",
-          "link": "https://ubuntu.com/security/notices/USN-8492-3",
-          "severity": "Low",
-          "cve_count": 299,
-          "cves": [
-            "CVE-2025-71232",
-            "CVE-2026-43269",
-            "CVE-2026-43313",
-            "CVE-2026-43200",
-            "CVE-2026-43264",
-            "CVE-2026-43256",
-            "CVE-2026-45873",
-            "CVE-2026-43128",
-            "CVE-2026-43222",
-            "CVE-2026-43211",
-            "CVE-2026-43258",
-            "CVE-2026-45864",
-            "CVE-2026-43315",
-            "CVE-2026-45968",
-            "CVE-2026-31607"
-          ],
-          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
         }
       ]
     },
@@ -663,10 +650,34 @@
       "platform": "chromeos",
       "month": "July 2026",
       "source": "https://chromereleases.googleblog.com/feeds/posts/default",
-      "total_releases": 1,
+      "total_releases": 3,
       "total_cves": 0,
-      "summary": "ChromeOS released 1 updates in July 2026 covering 0 CVEs.",
+      "summary": "ChromeOS released 3 updates in July 2026 covering 0 CVEs.",
       "releases": [
+        {
+          "title": "Dev Channel Update for ChromeOS / ChromeOS Flex",
+          "date": "2026-07-07",
+          "link": "http://chromereleases.googleblog.com/2026/07/dev-channel-update-for-chromeos.html",
+          "versions": [
+            "151.0.7922.14"
+          ],
+          "cves": [],
+          "cve_count": 0,
+          "security_fix_count": 0
+        },
+        {
+          "title": "Stable Channel Update for Desktop",
+          "date": "2026-07-07",
+          "link": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop.html",
+          "versions": [
+            "150.0.7871.47",
+            "150.0.7871.100",
+            "150.0.7871.101"
+          ],
+          "cves": [],
+          "cve_count": 0,
+          "security_fix_count": 0
+        },
         {
           "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
           "date": "2026-07-06",
