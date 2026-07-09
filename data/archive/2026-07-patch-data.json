@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-09T12:08:39.789317Z",
+  "collected_at": "2026-07-09T12:15:24.658768Z",
   "year": 2026,
   "month": 7,
   "month_label": "July 2026",
@@ -478,21 +478,21 @@
           "severity": "Low",
           "cve_count": 299,
           "cves": [
-            "CVE-2026-43183",
-            "CVE-2026-45910",
-            "CVE-2026-43186",
-            "CVE-2026-43313",
-            "CVE-2026-46251",
-            "CVE-2026-43209",
-            "CVE-2026-43211",
-            "CVE-2026-43257",
-            "CVE-2026-46261",
-            "CVE-2025-40005",
-            "CVE-2026-43341",
-            "CVE-2026-43203",
-            "CVE-2026-43222",
-            "CVE-2026-43117",
-            "CVE-2026-45880"
+            "CVE-2026-43302",
+            "CVE-2026-45893",
+            "CVE-2026-46247",
+            "CVE-2026-31411",
+            "CVE-2026-31436",
+            "CVE-2026-43406",
+            "CVE-2026-43124",
+            "CVE-2026-23455",
+            "CVE-2026-45864",
+            "CVE-2026-46265",
+            "CVE-2026-45865",
+            "CVE-2026-43180",
+            "CVE-2026-45877",
+            "CVE-2026-45915",
+            "CVE-2026-45862"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
         },
@@ -504,21 +504,21 @@
           "severity": "Low",
           "cve_count": 61,
           "cves": [
-            "CVE-2026-23272",
-            "CVE-2026-43186",
-            "CVE-2026-46043",
-            "CVE-2026-31402",
-            "CVE-2026-43376",
-            "CVE-2026-31478",
-            "CVE-2026-31685",
+            "CVE-2026-43501",
             "CVE-2026-46325",
             "CVE-2026-31436",
-            "CVE-2026-45988",
-            "CVE-2026-43341",
-            "CVE-2026-43304",
-            "CVE-2026-43037",
-            "CVE-2026-43117",
-            "CVE-2026-31718"
+            "CVE-2026-31607",
+            "CVE-2026-43038",
+            "CVE-2026-43406",
+            "CVE-2026-46195",
+            "CVE-2026-23455",
+            "CVE-2026-43407",
+            "CVE-2026-31478",
+            "CVE-2026-45898",
+            "CVE-2026-46244",
+            "CVE-2026-23450",
+            "CVE-2026-43071",
+            "CVE-2026-31635"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - Block layer subsystem;\n  - Cryptographic API;\n  - DMA engine subsystem;\n  - InfiniBand drive"
         },
@@ -540,13 +540,13 @@
           "severity": "Unknown",
           "cve_count": 7,
           "cves": [
-            "CVE-2026-20214",
-            "CVE-2026-20213",
-            "CVE-2026-20216",
-            "CVE-2026-20215",
             "CVE-2026-20244",
             "CVE-2026-20243",
-            "CVE-2026-20217"
+            "CVE-2026-20215",
+            "CVE-2026-20217",
+            "CVE-2026-20216",
+            "CVE-2026-20213",
+            "CVE-2026-20214"
           ],
           "summary": "It was discovered that ClamAV incorrectly handled certain PE files. A\nremote attacker could possibly use this issue to cause ClamAV to crash,\nresulting in a denial of service. (CVE-2026-20213, CVE-2026-20214,\nCVE-2026-20217)\n\nIt was discovered that ClamAV incorrectly handled certain 7z archive\nfiles"
         },
@@ -558,18 +558,18 @@
           "severity": "Unknown",
           "cve_count": 12,
           "cves": [
-            "CVE-2026-44119",
-            "CVE-2026-34355",
-            "CVE-2026-29170",
-            "CVE-2026-44186",
-            "CVE-2026-42535",
-            "CVE-2026-34356",
-            "CVE-2026-44185",
             "CVE-2026-43951",
-            "CVE-2026-48913",
-            "CVE-2026-44631",
+            "CVE-2026-34355",
+            "CVE-2026-42535",
+            "CVE-2026-29170",
+            "CVE-2026-29167",
+            "CVE-2026-44186",
+            "CVE-2026-44119",
             "CVE-2026-42536",
-            "CVE-2026-29167"
+            "CVE-2026-44185",
+            "CVE-2026-44631",
+            "CVE-2026-34356",
+            "CVE-2026-48913"
           ],
           "summary": "It was discovered that Apache HTTP Server's mod_ldap module incorrectly\nhandled memory when processing per-directory configurations. An attacker\ncould use this issue to cause the server to crash, resulting in a denial of\nservice, or possibly execute arbitrary code. (CVE-2026-29167)\n\nIt was discovere"
         },
@@ -601,16 +601,16 @@
           "severity": "Unknown",
           "cve_count": 10,
           "cves": [
-            "CVE-2026-42010",
-            "CVE-2026-3833",
-            "CVE-2025-14831",
-            "CVE-2026-5260",
-            "CVE-2024-0553",
             "CVE-2025-9820",
             "CVE-2026-33845",
-            "CVE-2026-33846",
+            "CVE-2026-5260",
+            "CVE-2024-12243",
+            "CVE-2026-42010",
             "CVE-2026-42009",
-            "CVE-2024-12243"
+            "CVE-2025-14831",
+            "CVE-2026-33846",
+            "CVE-2024-0553",
+            "CVE-2026-3833"
           ],
           "summary": "It was discovered that GnuTLS had a timing side-channel when processing\nmalformed ciphertexts in RSA-PSK ClientKeyExchange. A remote attacker\ncould possibly use this issue to recover sensitive information. This\nissue only affected Ubuntu 18.04 LTS. (CVE-2024-0553)\n\nBing Shi discovered that GnuTLS in"
         },
@@ -622,9 +622,9 @@
           "severity": "Unknown",
           "cve_count": 3,
           "cves": [
-            "CVE-2025-14179",
+            "CVE-2026-6722",
             "CVE-2026-7261",
-            "CVE-2026-6722"
+            "CVE-2025-14179"
           ],
           "summary": "It was discovered that PHP incorrectly handled SOAP object deduplication\nwhen processing apache:Map nodes with duplicate keys. An attacker could\npossibly use this to cause a use-after-free, resulting in remote code\nexecution. (CVE-2026-6722)\n\nIt was discovered that PHP incorrectly handled SOAP reque"
         },
@@ -683,16 +683,16 @@
             "144.0.7559.257"
           ],
           "cves": [
-            "CVE-2026-12443",
-            "CVE-2026-9897",
+            "CVE-2026-9931",
             "CVE-2026-12467",
             "CVE-2026-8514",
-            "CVE-2026-12033",
-            "CVE-2026-11668",
-            "CVE-2026-13029",
-            "CVE-2026-11673",
             "CVE-2026-10006",
-            "CVE-2026-9931"
+            "CVE-2026-12443",
+            "CVE-2026-11668",
+            "CVE-2026-12033",
+            "CVE-2026-11673",
+            "CVE-2026-9897",
+            "CVE-2026-13029"
           ],
           "cve_count": 10,
           "security_fix_count": 11
@@ -702,31 +702,31 @@
           "date": "2026-07-08",
           "link": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01162222768.html",
           "versions": [
-            "150.0.7871.115",
             "150.0.7871.114",
+            "150.0.7871.115",
             "150.0.7871.101"
           ],
           "cves": [
-            "CVE-2026-15114",
-            "CVE-2026-15107",
-            "CVE-2026-15120",
             "CVE-2026-15128",
-            "CVE-2026-15129",
-            "CVE-2026-15113",
-            "CVE-2026-15118",
-            "CVE-2026-15112",
-            "CVE-2026-15115",
-            "CVE-2026-15121",
-            "CVE-2026-15130",
-            "CVE-2026-15109",
+            "CVE-2026-15114",
             "CVE-2026-15133",
-            "CVE-2026-15116",
             "CVE-2026-15124",
-            "CVE-2026-15110",
+            "CVE-2026-15120",
+            "CVE-2026-15126",
+            "CVE-2026-15127",
             "CVE-2026-15131",
+            "CVE-2026-15111",
+            "CVE-2026-15122",
+            "CVE-2026-15112",
+            "CVE-2026-15129",
+            "CVE-2026-15118",
+            "CVE-2026-15108",
             "CVE-2026-15132",
-            "CVE-2026-15123",
-            "CVE-2026-15126"
+            "CVE-2026-15117",
+            "CVE-2026-15119",
+            "CVE-2026-15130",
+            "CVE-2026-15113",
+            "CVE-2026-15115"
           ],
           "cve_count": 27,
           "security_fix_count": 32
@@ -747,9 +747,9 @@
           "date": "2026-07-07",
           "link": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop.html",
           "versions": [
-            "150.0.7871.47",
             "150.0.7871.101",
-            "150.0.7871.100"
+            "150.0.7871.100",
+            "150.0.7871.47"
           ],
           "cves": [],
           "cve_count": 0,

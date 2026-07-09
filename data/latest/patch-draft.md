@@ -66,12 +66,12 @@ Canonical published **10 USNs** covering **394 CVEs** this month.
 ### USN-8492-4 – USN-8492-4: Linux kernel (Raspberry Pi) vulnerabilities
 **Severity:** Low  **CVEs:** 299
 [View USN](https://ubuntu.com/security/notices/USN-8492-4)
-**CVE IDs:** CVE-2026-43183, CVE-2026-45910, CVE-2026-43186, CVE-2026-43313, CVE-2026-46251, CVE-2026-43209
+**CVE IDs:** CVE-2026-43302, CVE-2026-45893, CVE-2026-46247, CVE-2026-31411, CVE-2026-31436, CVE-2026-43406
 
 ### USN-8490-2 – USN-8490-2: Linux kernel (Raspberry Pi) vulnerabilities
 **Severity:** Low  **CVEs:** 61
 [View USN](https://ubuntu.com/security/notices/USN-8490-2)
-**CVE IDs:** CVE-2026-23272, CVE-2026-43186, CVE-2026-46043, CVE-2026-31402, CVE-2026-43376, CVE-2026-31478
+**CVE IDs:** CVE-2026-43501, CVE-2026-46325, CVE-2026-31436, CVE-2026-31607, CVE-2026-43038, CVE-2026-43406
 
 ### USN-8518-1 – USN-8518-1: mailcap vulnerability
 **Severity:** Unknown  **CVEs:** 0
@@ -80,12 +80,12 @@ Canonical published **10 USNs** covering **394 CVEs** this month.
 ### USN-8517-1 – USN-8517-1: ClamAV vulnerabilities
 **Severity:** Unknown  **CVEs:** 7
 [View USN](https://ubuntu.com/security/notices/USN-8517-1)
-**CVE IDs:** CVE-2026-20214, CVE-2026-20213, CVE-2026-20216, CVE-2026-20215, CVE-2026-20244, CVE-2026-20243
+**CVE IDs:** CVE-2026-20244, CVE-2026-20243, CVE-2026-20215, CVE-2026-20217, CVE-2026-20216, CVE-2026-20213
 
 ### USN-8516-1 – USN-8516-1: Apache HTTP Server vulnerabilities
 **Severity:** Unknown  **CVEs:** 12
 [View USN](https://ubuntu.com/security/notices/USN-8516-1)
-**CVE IDs:** CVE-2026-44119, CVE-2026-34355, CVE-2026-29170, CVE-2026-44186, CVE-2026-42535, CVE-2026-34356
+**CVE IDs:** CVE-2026-43951, CVE-2026-34355, CVE-2026-42535, CVE-2026-29170, CVE-2026-29167, CVE-2026-44186
 
 ### USN-8515-1 – USN-8515-1: Addressable vulnerability
 **Severity:** Unknown  **CVEs:** 0
@@ -98,12 +98,12 @@ Canonical published **10 USNs** covering **394 CVEs** this month.
 ### USN-8502-1 – USN-8502-1: GnuTLS vulnerabilities
 **Severity:** Unknown  **CVEs:** 10
 [View USN](https://ubuntu.com/security/notices/USN-8502-1)
-**CVE IDs:** CVE-2026-42010, CVE-2026-3833, CVE-2025-14831, CVE-2026-5260, CVE-2024-0553, CVE-2025-9820
+**CVE IDs:** CVE-2025-9820, CVE-2026-33845, CVE-2026-5260, CVE-2024-12243, CVE-2026-42010, CVE-2026-42009
 
 ### USN-8513-1 – USN-8513-1: PHP vulnerabilities
 **Severity:** Unknown  **CVEs:** 3
 [View USN](https://ubuntu.com/security/notices/USN-8513-1)
-**CVE IDs:** CVE-2025-14179, CVE-2026-7261, CVE-2026-6722
+**CVE IDs:** CVE-2026-6722, CVE-2026-7261, CVE-2025-14179
 
 ### USN-8512-1 – USN-8512-1: Gzip vulnerabilities
 **Severity:** Unknown  **CVEs:** 2
@@ -144,7 +144,7 @@ Google released **5 ChromeOS updates** covering **37 CVEs** this month.
 
 ## Stable Channel Update for Desktop
 **Date:** 2026-07-08  **CVEs:** 27
-**Version(s):** 150.0.7871.115, 150.0.7871.114, 150.0.7871.101
+**Version(s):** 150.0.7871.114, 150.0.7871.115, 150.0.7871.101
 [View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01162222768.html)
 
 ## Dev Channel Update for ChromeOS / ChromeOS Flex
@@ -154,7 +154,7 @@ Google released **5 ChromeOS updates** covering **37 CVEs** this month.
 
 ## Stable Channel Update for Desktop
 **Date:** 2026-07-07  **CVEs:** 0
-**Version(s):** 150.0.7871.47, 150.0.7871.101, 150.0.7871.100
+**Version(s):** 150.0.7871.101, 150.0.7871.100, 150.0.7871.47
 [View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop.html)
 
 ## Stable Channel Update for ChromeOS / ChromeOS Flex
@@ -240,4 +240,4 @@ Cisco published **0 IOS/IOS XE advisories** — Critical: 0, High: 0. *(HTML scr
 
 
 ---
-*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-09T12:08:39.789317Z*
+*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-09T12:15:24.658768Z*
