@@ -1,40 +1,31 @@
 """
-Cisco Collector — Cisco IOS / IOS XE Security Advisories
-Source: Cisco Security Advisories page + optional Cisco PSIRT OpenVuln API
-URL: https://sec.cloudapps.cisco.com/security/center/publicationListing.x
-
-OPTIONAL API: The Cisco PSIRT OpenVuln API gives structured data.
-To use it:
-  1. Register at https://developer.cisco.com/
-  2. Create an app and get Client ID + Client Secret
-  3. Set env vars: CISCO_CLIENT_ID and CISCO_CLIENT_SECRET
-
-Without the API, this collector falls back to scraping the public advisories page.
+Cisco Collector — Cisco Security Advisories
+Primary: PSIRT openVuln API (optional, needs CISCO_CLIENT_ID/SECRET)
+Fallback: Official Cisco PSIRT RSS feed (no auth)
 """
 
 import os
 import requests
-from bs4 import BeautifulSoup
+import xml.etree.ElementTree as ET
 from datetime import datetime
 import re
 
-
-CISCO_PUBLIC_URL = "https://sec.cloudapps.cisco.com/security/center/publicationListing.x"
+CISCO_RSS_URL = "https://sec.cloudapps.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml"
 CISCO_API_TOKEN_URL = "https://id.cisco.com/oauth2/default/v1/token"
 CISCO_API_URL = "https://api.cisco.com/security/advisories/v2"
 
+# Set to True to only track IOS/IOS XE/network-OS advisories.
+# False = all Cisco advisories (recommended: matches what Cisco actually
+# publishes month to month; big IOS bundles only land in March/September).
+IOS_ONLY = False
+IOS_PATTERN = r"IOS|Catalyst|ASA|Firepower|NX-OS|SD-WAN"
 
-def _get_api_token(client_id: str, client_secret: str) -> str | None:
+
+def _get_api_token(client_id, client_secret):
     try:
-        resp = requests.post(
-            CISCO_API_TOKEN_URL,
-            data={
-                "grant_type": "client_credentials",
-                "client_id": client_id,
-                "client_secret": client_secret
-            },
-            timeout=15
-        )
+        resp = requests.post(CISCO_API_TOKEN_URL, data={
+            "grant_type": "client_credentials",
+            "client_id": client_id, "client_secret": client_secret}, timeout=15)
         resp.raise_for_status()
         return resp.json().get("access_token")
     except Exception as e:
@@ -42,131 +33,84 @@ def _get_api_token(client_id: str, client_secret: str) -> str | None:
         return None
 
 
-def _collect_api(year: int, month: int, token: str) -> list:
-    """Use Cisco PSIRT OpenVuln API — requires registered API credentials."""
+def _collect_api(year, month, token):
     advisories = []
-    month_str_short = datetime(year, month, 1).strftime("%Y-%m")
-
     headers = {"Authorization": f"Bearer {token}", "Accept": "application/json"}
-
     try:
-        # Get advisories by year
-        url = f"{CISCO_API_URL}/year/{year}"
-        resp = requests.get(url, headers=headers, timeout=30)
+        resp = requests.get(f"{CISCO_API_URL}/year/{year}", headers=headers, timeout=30)
         resp.raise_for_status()
-        data = resp.json()
-
-        for adv in data.get("advisories", []):
-            pub_date_str = adv.get("firstPublished", "")
+        for adv in resp.json().get("advisories", []):
             try:
-                pub_date = datetime.strptime(pub_date_str[:10], "%Y-%m-%d")
-            except Exception:
+                pub = datetime.strptime(adv.get("firstPublished", "")[:10], "%Y-%m-%d")
+            except ValueError:
                 continue
-
-            if pub_date.month != month:
+            if pub.month != month:
                 continue
-
-            # Filter to IOS / IOS XE products only
             affected = " ".join(adv.get("productNames", []))
-            if not re.search(r"IOS|IOS XE|Catalyst|ASA|Firepower", affected, re.I):
+            if IOS_ONLY and not re.search(IOS_PATTERN, affected, re.I):
                 continue
-
-            cves = adv.get("cves", [])
-            severity = adv.get("sir", "Unknown")  # SIR = Security Impact Rating
-
             advisories.append({
                 "advisory_id": adv.get("advisoryId", ""),
                 "title": adv.get("advisoryTitle", ""),
-                "severity": severity,
-                "date": pub_date.strftime("%Y-%m-%d"),
+                "severity": adv.get("sir", "Unknown"),
+                "date": pub.strftime("%Y-%m-%d"),
                 "link": adv.get("publicationUrl", ""),
-                "cves": cves[:10],
-                "cve_count": len(cves),
-                "affected_products": adv.get("productNames", [])[:5]
+                "cves": adv.get("cves", [])[:10],
+                "cve_count": len(adv.get("cves", [])),
             })
-
     except Exception as e:
         print(f"[Cisco] API collection error: {e}")
-
     return advisories
 
 
-def _collect_html(year: int, month: int) -> list:
-    """Fallback: scrape the public Cisco advisories listing page."""
+def _collect_rss(year, month):
     advisories = []
-    month_str = datetime(year, month, 1).strftime("%B %Y")
-
     try:
-        resp = requests.get(
-            CISCO_PUBLIC_URL,
-            timeout=30,
-            headers={"User-Agent": "Mozilla/5.0"}
-        )
+        resp = requests.get(CISCO_RSS_URL, timeout=30, headers={"User-Agent": "Mozilla/5.0"})
         resp.raise_for_status()
+        root = ET.fromstring(resp.content)
     except Exception as e:
-        print(f"[Cisco] HTML scrape failed: {e}")
+        print(f"[Cisco] RSS fetch failed: {e}")
         return []
 
-    soup = BeautifulSoup(resp.text, "html.parser")
+    channel = root.find("channel")
+    items = channel.findall("item") if channel is not None else root.findall(".//item")
 
-    # Look for advisory rows — Cisco's table has date, title, severity columns
-    for row in soup.select("tr, .advisoryListRow"):
-        cols = row.find_all("td")
-        if len(cols) < 3:
-            continue
+    for item in items:
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        pub_str = (item.findtext("pubDate") or "").strip()
+        desc = re.sub(r"<[^>]+>", " ", item.findtext("description") or "")
 
-        text = row.get_text(" ", strip=True)
-
-        # Date check
-        date_match = re.search(r"(\d{4}-\d{2}-\d{2}|\w+ \d{1,2}, \d{4})", text)
-        if not date_match:
-            continue
-
-        date_raw = date_match.group(0)
         try:
-            try:
-                pub_date = datetime.strptime(date_raw, "%Y-%m-%d")
-            except ValueError:
-                pub_date = datetime.strptime(date_raw, "%B %d, %Y")
-        except Exception:
+            pub = datetime.strptime(pub_str[:25].strip(), "%a, %d %b %Y %H:%M:%S")
+        except ValueError:
+            continue
+        if pub.year != year or pub.month != month:
             continue
 
-        if pub_date.year != year or pub_date.month != month:
+        combined = title + " " + desc
+        if IOS_ONLY and not re.search(IOS_PATTERN, combined, re.I):
             continue
-
-        # Filter IOS-related
-        if not re.search(r"IOS|Catalyst|ASA|Firepower|NX-OS", text, re.I):
-            continue
-
-        link_tag = row.find("a")
-        link = link_tag["href"] if link_tag else ""
-        if link and not link.startswith("http"):
-            link = "https://sec.cloudapps.cisco.com" + link
-
-        cves = list(set(re.findall(r"CVE-\d{4}-\d+", text)))
 
         severity = "Unknown"
         for sev in ("Critical", "High", "Medium", "Low"):
-            if sev.lower() in text.lower():
+            if re.search(rf"\b{sev}\b", combined, re.I):
                 severity = sev
                 break
 
-        title_tag = row.find("a")
-        title = title_tag.get_text(strip=True) if title_tag else text[:100]
-
-        cisco_id_match = re.search(r"cisco-sa-[\w-]+", link + text, re.I)
-        cisco_id = cisco_id_match.group(0) if cisco_id_match else ""
+        cves = list(set(re.findall(r"CVE-\d{4}-\d+", combined)))
+        id_match = re.search(r"cisco-sa-[\w-]+", link + " " + combined, re.I)
 
         advisories.append({
-            "advisory_id": cisco_id,
+            "advisory_id": id_match.group(0) if id_match else "",
             "title": title,
             "severity": severity,
-            "date": pub_date.strftime("%Y-%m-%d"),
+            "date": pub.strftime("%Y-%m-%d"),
             "link": link,
             "cves": cves[:10],
-            "cve_count": len(cves)
+            "cve_count": len(cves),
         })
-
     return advisories
 
 
@@ -174,59 +118,42 @@ def collect(year: int = None, month: int = None) -> dict:
     now = datetime.utcnow()
     year = year or now.year
     month = month or now.month
-
     month_str = datetime(year, month, 1).strftime("%B %Y")
 
-    # Try API first if credentials are set
     client_id = os.environ.get("CISCO_CLIENT_ID")
     client_secret = os.environ.get("CISCO_CLIENT_SECRET")
 
-    advisories = []
-    source_used = "html_scrape"
-
+    advisories, source_used, api_mode = [], CISCO_RSS_URL, False
     if client_id and client_secret:
-        print("[Cisco] API credentials found — using PSIRT OpenVuln API")
         token = _get_api_token(client_id, client_secret)
         if token:
             advisories = _collect_api(year, month, token)
-            source_used = CISCO_API_URL
-    
+            source_used, api_mode = CISCO_API_URL, True
     if not advisories:
-        print("[Cisco] Falling back to HTML scrape")
-        advisories = _collect_html(year, month)
-        source_used = CISCO_PUBLIC_URL
+        advisories = _collect_rss(year, month)
+        source_used, api_mode = CISCO_RSS_URL, False
 
     severity_counts = {"Critical": 0, "High": 0, "Medium": 0, "Low": 0}
-    for adv in advisories:
-        sev = adv.get("severity", "")
-        if sev in severity_counts:
-            severity_counts[sev] += 1
+    for a in advisories:
+        if a["severity"] in severity_counts:
+            severity_counts[a["severity"]] += 1
 
-    total_cves = sum(a.get("cve_count", 0) for a in advisories)
-
-    api_note = "" if (client_id and client_secret) else " (Set CISCO_CLIENT_ID + CISCO_CLIENT_SECRET env vars for full API access.)"
+    scope = "IOS/IOS XE" if IOS_ONLY else "security"
     summary = (
-        f"Cisco published {len(advisories)} IOS/IOS XE advisories in {month_str}. "
+        f"Cisco published {len(advisories)} {scope} advisories in {month_str}. "
         f"Critical: {severity_counts['Critical']}, High: {severity_counts['High']}."
-        f"{api_note}"
-        if advisories
-        else f"No Cisco advisories found for {month_str}.{api_note}"
+        if advisories else f"No Cisco {scope} advisories found for {month_str}."
     )
 
     return {
-        "platform": "cisco",
-        "month": month_str,
-        "source": source_used,
-        "api_mode": source_used != CISCO_PUBLIC_URL,
-        "total_advisories": len(advisories),
-        "total_cves": total_cves,
-        "severity_counts": severity_counts,
-        "summary": summary,
-        "advisories": advisories
+        "platform": "cisco", "month": month_str, "source": source_used,
+        "api_mode": api_mode, "total_advisories": len(advisories),
+        "total_cves": sum(a["cve_count"] for a in advisories),
+        "severity_counts": severity_counts, "summary": summary,
+        "advisories": advisories,
     }
 
 
 if __name__ == "__main__":
     import json
-    result = collect()
-    print(json.dumps(result, indent=2))
+    print(json.dumps(collect(), indent=2))
