@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-09T12:15:24.658768Z",
+  "collected_at": "2026-07-10T10:42:29.959592Z",
   "year": 2026,
   "month": 7,
   "month_label": "July 2026",
@@ -8,10 +8,10 @@
       "platform": "windows",
       "month": "2026-Jul",
       "source": "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Jul",
-      "total_cves": 397,
+      "total_cves": 400,
       "critical_count": 8,
       "important_count": 63,
-      "summary": "Microsoft released 397 CVEs for 2026-Jul. 8 Critical, 63 Important.",
+      "summary": "Microsoft released 400 CVEs for 2026-Jul. 8 Critical, 63 Important.",
       "cves": [
         {
           "cve_id": "CVE-2026-53355",
@@ -383,6 +383,12 @@
           "products": []
         },
         {
+          "cve_id": "CVE-2026-56288",
+          "title": "NULL Pointer Dereference in GNU patch",
+          "severity": "Moderate",
+          "products": []
+        },
+        {
           "cve_id": "CVE-2026-53354",
           "title": "arm64: errata: Mitigate TLBI errata on various Arm CPUs",
           "severity": "Important",
@@ -437,14 +443,6 @@
           "products": [
             "21344-17084"
           ]
-        },
-        {
-          "cve_id": "CVE-2026-53356",
-          "title": "drm/i915/gem: Fix phys BO pread/pwrite with offset",
-          "severity": "Important",
-          "products": [
-            "21344-17084"
-          ]
         }
       ],
       "kb_articles": [
@@ -467,179 +465,215 @@
       "month": "July 2026",
       "source": "https://ubuntu.com/security/notices/rss.xml",
       "total_notices": 10,
-      "total_cves": 394,
-      "summary": "Ubuntu published 10 security notices in July 2026 covering 394 CVEs.",
+      "total_cves": 511,
+      "summary": "Ubuntu published 10 security notices in July 2026 covering 511 CVEs.",
       "notices": [
         {
-          "usn_id": "USN-8492-4",
-          "title": "USN-8492-4: Linux kernel (Raspberry Pi) vulnerabilities",
-          "date": "2026-07-09",
-          "link": "https://ubuntu.com/security/notices/USN-8492-4",
+          "usn_id": "USN-8530-1",
+          "title": "USN-8530-1: Linux kernel (AWS) vulnerabilities",
+          "date": "2026-07-10",
+          "link": "https://ubuntu.com/security/notices/USN-8530-1",
+          "severity": "Low",
+          "cve_count": 22,
+          "cves": [
+            "CVE-2026-43383",
+            "CVE-2026-31682",
+            "CVE-2026-43011",
+            "CVE-2026-46119",
+            "CVE-2026-43284",
+            "CVE-2026-43503",
+            "CVE-2026-43414",
+            "CVE-2026-45988",
+            "CVE-2026-31659",
+            "CVE-2026-31637",
+            "CVE-2026-31607",
+            "CVE-2026-43407",
+            "CVE-2026-46243",
+            "CVE-2026-46043",
+            "CVE-2024-56643"
+          ],
+          "summary": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the\nRxRPC networking subsystem when processing paged fragments. A local\nattacker could"
+        },
+        {
+          "usn_id": "USN-8529-1",
+          "title": "USN-8529-1: Linux kernel vulnerabilities",
+          "date": "2026-07-10",
+          "link": "https://ubuntu.com/security/notices/USN-8529-1",
+          "severity": "Low",
+          "cve_count": 21,
+          "cves": [
+            "CVE-2026-43383",
+            "CVE-2026-31682",
+            "CVE-2026-43011",
+            "CVE-2026-46119",
+            "CVE-2026-43503",
+            "CVE-2026-43414",
+            "CVE-2026-45988",
+            "CVE-2026-31659",
+            "CVE-2026-31637",
+            "CVE-2026-31607",
+            "CVE-2026-43407",
+            "CVE-2026-46243",
+            "CVE-2026-46043",
+            "CVE-2024-56643",
+            "CVE-2026-43037"
+          ],
+          "summary": "It was discovered that a logic flaw existed in the XFRM ESP-in-TCP\nsubsystem in the Linux kernel when handling socket buffer fragments. This\nflaw is known as Fragnesia. A local attacker could use this to escalate\nprivileges, or possibly escape a container. (CVE-2026-43503)\n\nSeveral security issues w"
+        },
+        {
+          "usn_id": "USN-8528-1",
+          "title": "USN-8528-1: Linux kernel (Xilinx ZynqMP) vulnerabilities",
+          "date": "2026-07-10",
+          "link": "https://ubuntu.com/security/notices/USN-8528-1",
+          "severity": "Low",
+          "cve_count": 82,
+          "cves": [
+            "CVE-2026-43383",
+            "CVE-2026-43011",
+            "CVE-2026-46195",
+            "CVE-2026-43284",
+            "CVE-2026-23257",
+            "CVE-2026-43414",
+            "CVE-2026-43117",
+            "CVE-2025-37778",
+            "CVE-2026-23256",
+            "CVE-2026-31657",
+            "CVE-2026-31659",
+            "CVE-2026-23450",
+            "CVE-2026-43078",
+            "CVE-2026-43407",
+            "CVE-2026-31418"
+          ],
+          "summary": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privileges, or possibly escape\na container. (CVE-2026-31431)\n\nIt was discovered that the Linux kernel did"
+        },
+        {
+          "usn_id": "USN-8527-1",
+          "title": "USN-8527-1: Linux kernel (Raspberry Pi) vulnerabilities",
+          "date": "2026-07-10",
+          "link": "https://ubuntu.com/security/notices/USN-8527-1",
+          "severity": "Low",
+          "cve_count": 64,
+          "cves": [
+            "CVE-2026-43383",
+            "CVE-2026-31682",
+            "CVE-2026-43011",
+            "CVE-2025-71089",
+            "CVE-2025-40082",
+            "CVE-2026-23202",
+            "CVE-2026-46119",
+            "CVE-2026-46195",
+            "CVE-2026-23257",
+            "CVE-2026-23272",
+            "CVE-2026-43117",
+            "CVE-2026-43414",
+            "CVE-2026-23278",
+            "CVE-2025-37778",
+            "CVE-2026-23256"
+          ],
+          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - RISC-V architecture;\n  - Cryptographic API;\n  - InfiniBand drivers;\n  - IOMMU subsystem;\n  - Network drivers;\n  - ST"
+        },
+        {
+          "usn_id": "USN-8492-5",
+          "title": "USN-8492-5: Linux kernel (FIPS) vulnerabilities",
+          "date": "2026-07-10",
+          "link": "https://ubuntu.com/security/notices/USN-8492-5",
           "severity": "Low",
           "cve_count": 299,
           "cves": [
-            "CVE-2026-43302",
-            "CVE-2026-45893",
-            "CVE-2026-46247",
-            "CVE-2026-31411",
-            "CVE-2026-31436",
-            "CVE-2026-43406",
-            "CVE-2026-43124",
-            "CVE-2026-23455",
-            "CVE-2026-45864",
-            "CVE-2026-46265",
-            "CVE-2026-45865",
-            "CVE-2026-43180",
-            "CVE-2026-45877",
-            "CVE-2026-45915",
-            "CVE-2026-45862"
+            "CVE-2026-43147",
+            "CVE-2026-43011",
+            "CVE-2026-43231",
+            "CVE-2026-43383",
+            "CVE-2026-45960",
+            "CVE-2026-45936",
+            "CVE-2026-46195",
+            "CVE-2026-43268",
+            "CVE-2026-23237",
+            "CVE-2026-43218",
+            "CVE-2026-45873",
+            "CVE-2026-45984",
+            "CVE-2026-45982",
+            "CVE-2026-43414",
+            "CVE-2026-43117"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
         },
         {
-          "usn_id": "USN-8490-2",
-          "title": "USN-8490-2: Linux kernel (Raspberry Pi) vulnerabilities",
+          "usn_id": "USN-8526-1",
+          "title": "USN-8526-1: libheif vulnerabilities",
           "date": "2026-07-09",
-          "link": "https://ubuntu.com/security/notices/USN-8490-2",
+          "link": "https://ubuntu.com/security/notices/USN-8526-1",
           "severity": "Low",
-          "cve_count": 61,
+          "cve_count": 5,
           "cves": [
-            "CVE-2026-43501",
-            "CVE-2026-46325",
-            "CVE-2026-31436",
-            "CVE-2026-31607",
-            "CVE-2026-43038",
-            "CVE-2026-43406",
-            "CVE-2026-46195",
-            "CVE-2026-23455",
-            "CVE-2026-43407",
-            "CVE-2026-31478",
-            "CVE-2026-45898",
-            "CVE-2026-46244",
-            "CVE-2026-23450",
-            "CVE-2026-43071",
-            "CVE-2026-31635"
+            "CVE-2026-50142",
+            "CVE-2026-47714",
+            "CVE-2026-47709",
+            "CVE-2026-47254",
+            "CVE-2026-48029"
           ],
-          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - Block layer subsystem;\n  - Cryptographic API;\n  - DMA engine subsystem;\n  - InfiniBand drive"
+          "summary": "Xianrui Dong discovered that libheif had an out-of-bounds read in its\nHEIF sequence track parser. An attacker could possibly use this issue\nto cause a denial of service or obtain sensitive information. This issue\nonly affected Ubuntu 26.04 LTS. (CVE-2026-47254)\n\nJunyi Liu discovered that libheif had"
         },
         {
-          "usn_id": "USN-8518-1",
-          "title": "USN-8518-1: mailcap vulnerability",
-          "date": "2026-07-08",
-          "link": "https://ubuntu.com/security/notices/USN-8518-1",
-          "severity": "Unknown",
-          "cve_count": 0,
-          "cves": [],
-          "summary": "Aaron Rainbolt discovered that the cautious-launcher utility in the\nmailcap package did not properly restrict the execution of certain\nfile types. An attacker could use this issue to escape a sandboxed\napplication and execute arbitrary code on the host operating system."
-        },
-        {
-          "usn_id": "USN-8517-1",
-          "title": "USN-8517-1: ClamAV vulnerabilities",
-          "date": "2026-07-08",
-          "link": "https://ubuntu.com/security/notices/USN-8517-1",
-          "severity": "Unknown",
-          "cve_count": 7,
-          "cves": [
-            "CVE-2026-20244",
-            "CVE-2026-20243",
-            "CVE-2026-20215",
-            "CVE-2026-20217",
-            "CVE-2026-20216",
-            "CVE-2026-20213",
-            "CVE-2026-20214"
-          ],
-          "summary": "It was discovered that ClamAV incorrectly handled certain PE files. A\nremote attacker could possibly use this issue to cause ClamAV to crash,\nresulting in a denial of service. (CVE-2026-20213, CVE-2026-20214,\nCVE-2026-20217)\n\nIt was discovered that ClamAV incorrectly handled certain 7z archive\nfiles"
-        },
-        {
-          "usn_id": "USN-8516-1",
-          "title": "USN-8516-1: Apache HTTP Server vulnerabilities",
-          "date": "2026-07-08",
-          "link": "https://ubuntu.com/security/notices/USN-8516-1",
-          "severity": "Unknown",
-          "cve_count": 12,
-          "cves": [
-            "CVE-2026-43951",
-            "CVE-2026-34355",
-            "CVE-2026-42535",
-            "CVE-2026-29170",
-            "CVE-2026-29167",
-            "CVE-2026-44186",
-            "CVE-2026-44119",
-            "CVE-2026-42536",
-            "CVE-2026-44185",
-            "CVE-2026-44631",
-            "CVE-2026-34356",
-            "CVE-2026-48913"
-          ],
-          "summary": "It was discovered that Apache HTTP Server's mod_ldap module incorrectly\nhandled memory when processing per-directory configurations. An attacker\ncould use this issue to cause the server to crash, resulting in a denial of\nservice, or possibly execute arbitrary code. (CVE-2026-29167)\n\nIt was discovere"
-        },
-        {
-          "usn_id": "USN-8515-1",
-          "title": "USN-8515-1: Addressable vulnerability",
-          "date": "2026-07-07",
-          "link": "https://ubuntu.com/security/notices/USN-8515-1",
-          "severity": "Unknown",
-          "cve_count": 0,
-          "cves": [],
-          "summary": "It was discovered that Addressable incorrectly handled certain URI\ntemplates, generating regular expressions vulnerable to catastrophic\nbacktracking. An attacker could use this issue to craft a URI that, when matched\nagainst a vulnerable template, causes excessive resource consumption,\nleading to a"
-        },
-        {
-          "usn_id": "USN-8514-1",
-          "title": "USN-8514-1: OpenSSH vulnerability",
-          "date": "2026-07-06",
-          "link": "https://ubuntu.com/security/notices/USN-8514-1",
-          "severity": "Unknown",
-          "cve_count": 0,
-          "cves": [],
-          "summary": "It was discovered that OpenSSH incorrectly handled file permissions when\ndownloading files as root using the legacy scp protocol without the\npreserve-mode option. An attacker could use this to install setuid or setgid\nfiles on a system, possibly leading to privilege escalation."
-        },
-        {
-          "usn_id": "USN-8502-1",
-          "title": "USN-8502-1: GnuTLS vulnerabilities",
-          "date": "2026-07-06",
-          "link": "https://ubuntu.com/security/notices/USN-8502-1",
-          "severity": "Unknown",
+          "usn_id": "USN-8525-1",
+          "title": "USN-8525-1: curl vulnerabilities",
+          "date": "2026-07-09",
+          "link": "https://ubuntu.com/security/notices/USN-8525-1",
+          "severity": "Low",
           "cve_count": 10,
           "cves": [
-            "CVE-2025-9820",
-            "CVE-2026-33845",
-            "CVE-2026-5260",
-            "CVE-2024-12243",
-            "CVE-2026-42010",
-            "CVE-2026-42009",
-            "CVE-2025-14831",
-            "CVE-2026-33846",
-            "CVE-2024-0553",
-            "CVE-2026-3833"
+            "CVE-2026-12064",
+            "CVE-2024-11053",
+            "CVE-2026-7168",
+            "CVE-2026-11564",
+            "CVE-2026-11586",
+            "CVE-2024-8096",
+            "CVE-2026-5773",
+            "CVE-2026-10536",
+            "CVE-2026-11352",
+            "CVE-2026-5545"
           ],
-          "summary": "It was discovered that GnuTLS had a timing side-channel when processing\nmalformed ciphertexts in RSA-PSK ClientKeyExchange. A remote attacker\ncould possibly use this issue to recover sensitive information. This\nissue only affected Ubuntu 18.04 LTS. (CVE-2024-0553)\n\nBing Shi discovered that GnuTLS in"
+          "summary": "Harry Sintonen discovered that curl incorrectly handled credentials when\nfollowing HTTP redirects in conjunction with .netrc files. An attacker\ncould possibly use this issue to obtain sensitive information. This issue\nonly affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, and Ubuntu 18.04 LTS.\n(CVE-2024-"
         },
         {
-          "usn_id": "USN-8513-1",
-          "title": "USN-8513-1: PHP vulnerabilities",
-          "date": "2026-07-06",
-          "link": "https://ubuntu.com/security/notices/USN-8513-1",
+          "usn_id": "USN-8524-1",
+          "title": "USN-8524-1: Python vulnerability",
+          "date": "2026-07-09",
+          "link": "https://ubuntu.com/security/notices/USN-8524-1",
           "severity": "Unknown",
-          "cve_count": 3,
-          "cves": [
-            "CVE-2026-6722",
-            "CVE-2026-7261",
-            "CVE-2025-14179"
-          ],
-          "summary": "It was discovered that PHP incorrectly handled SOAP object deduplication\nwhen processing apache:Map nodes with duplicate keys. An attacker could\npossibly use this to cause a use-after-free, resulting in remote code\nexecution. (CVE-2026-6722)\n\nIt was discovered that PHP incorrectly handled SOAP reque"
+          "cve_count": 0,
+          "cves": [],
+          "summary": "It was discovered that Python did not use sufficient entropy for Expat\nhash-flooding protection in the xml.parsers.expat and xml.etree.ElementTree\nmodules. An attacker could use this to cause a denial of service via a\ncrafted XML document."
         },
         {
-          "usn_id": "USN-8512-1",
-          "title": "USN-8512-1: Gzip vulnerabilities",
-          "date": "2026-07-06",
-          "link": "https://ubuntu.com/security/notices/USN-8512-1",
+          "usn_id": "USN-8523-1",
+          "title": "USN-8523-1: libsoup vulnerabilities",
+          "date": "2026-07-09",
+          "link": "https://ubuntu.com/security/notices/USN-8523-1",
           "severity": "Unknown",
           "cve_count": 2,
           "cves": [
-            "CVE-2026-41992",
-            "CVE-2026-41991"
+            "CVE-2026-2369",
+            "CVE-2026-5119"
           ],
-          "summary": "It was discovered that Gzip's gzexe utility handled temporary files in an\ninsecure manner. When the mktemp utility was not available, gzexe\nconstructed a temporary file path based on the process ID, which could be\npredicted. A local attacker could possibly use this issue to overwrite\narbitrary files"
+          "summary": "Eric Su and Samuel Dainard discovered that libsoup incorrectly handled\ncontent with zero-length resources. An attacker could possibly use this\nissue to trigger a buffer over-read, resulting in information disclosure\nor a denial of service. This issue only affected Ubuntu 18.04 LTS,\nUbuntu 20.04 LTS,"
+        },
+        {
+          "usn_id": "USN-8522-1",
+          "title": "USN-8522-1: LibRaw vulnerabilities",
+          "date": "2026-07-09",
+          "link": "https://ubuntu.com/security/notices/USN-8522-1",
+          "severity": "Low",
+          "cve_count": 6,
+          "cves": [
+            "CVE-2026-24660",
+            "CVE-2026-24450",
+            "CVE-2026-20889",
+            "CVE-2026-20884",
+            "CVE-2026-21413",
+            "CVE-2026-5342"
+          ],
+          "summary": "It was discovered that LibRaw incorrectly handled certain Nikon RAW image\nfiles. An attacker could possibly use this issue to cause LibRaw to crash,\nresulting in a denial of service. (CVE-2026-5342)\n\nIt was discovered that LibRaw had an integer overflow in its DNG image\nloader. An attacker could pos"
         }
       ]
     },
@@ -683,16 +717,16 @@
             "144.0.7559.257"
           ],
           "cves": [
-            "CVE-2026-9931",
-            "CVE-2026-12467",
-            "CVE-2026-8514",
             "CVE-2026-10006",
-            "CVE-2026-12443",
+            "CVE-2026-9897",
+            "CVE-2026-12467",
+            "CVE-2026-13029",
             "CVE-2026-11668",
             "CVE-2026-12033",
+            "CVE-2026-9931",
             "CVE-2026-11673",
-            "CVE-2026-9897",
-            "CVE-2026-13029"
+            "CVE-2026-12443",
+            "CVE-2026-8514"
           ],
           "cve_count": 10,
           "security_fix_count": 11
@@ -707,26 +741,26 @@
             "150.0.7871.101"
           ],
           "cves": [
+            "CVE-2026-15109",
+            "CVE-2026-15115",
+            "CVE-2026-15121",
             "CVE-2026-15128",
-            "CVE-2026-15114",
-            "CVE-2026-15133",
-            "CVE-2026-15124",
-            "CVE-2026-15120",
-            "CVE-2026-15126",
-            "CVE-2026-15127",
-            "CVE-2026-15131",
-            "CVE-2026-15111",
-            "CVE-2026-15122",
-            "CVE-2026-15112",
+            "CVE-2026-15123",
             "CVE-2026-15129",
-            "CVE-2026-15118",
-            "CVE-2026-15108",
-            "CVE-2026-15132",
-            "CVE-2026-15117",
+            "CVE-2026-15114",
+            "CVE-2026-15107",
+            "CVE-2026-15111",
+            "CVE-2026-15133",
+            "CVE-2026-15116",
             "CVE-2026-15119",
-            "CVE-2026-15130",
+            "CVE-2026-15125",
+            "CVE-2026-15124",
             "CVE-2026-15113",
-            "CVE-2026-15115"
+            "CVE-2026-15126",
+            "CVE-2026-15112",
+            "CVE-2026-15108",
+            "CVE-2026-15118",
+            "CVE-2026-15110"
           ],
           "cve_count": 27,
           "security_fix_count": 32
@@ -747,9 +781,9 @@
           "date": "2026-07-07",
           "link": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop.html",
           "versions": [
-            "150.0.7871.101",
             "150.0.7871.100",
-            "150.0.7871.47"
+            "150.0.7871.47",
+            "150.0.7871.101"
           ],
           "cves": [],
           "cve_count": 0,
@@ -772,15 +806,15 @@
       "platform": "palo_alto",
       "month": "July 2026",
       "source": "https://security.paloaltonetworks.com/",
-      "total_advisories": 14,
-      "total_cves": 13,
+      "total_advisories": 13,
+      "total_cves": 12,
       "severity_counts": {
         "Critical": 0,
         "High": 2,
-        "Medium": 7,
+        "Medium": 6,
         "Low": 5
       },
-      "summary": "Palo Alto Networks published 14 advisories in July 2026. Critical: 0, High: 2. Total CVEs: 13.",
+      "summary": "Palo Alto Networks published 13 advisories in July 2026. Critical: 0, High: 2. Total CVEs: 12.",
       "advisories": [
         {
           "advisory_id": "",
@@ -790,72 +824,6 @@
           "link": "https://security.paloaltonetworks.com/CVE-2026-0279",
           "cves": [
             "CVE-2026-0279"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0283 PAN-OS: Authentication Bypass Vulnerability in Large Scale VPN (LSVPN) (Severity: MEDIUM)",
-          "severity": "Medium",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0283",
-          "cves": [
-            "CVE-2026-0283"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0281 PAN-OS: Information Disclosure Vulnerability in Management Web Interface (Severity: LOW)",
-          "severity": "Low",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0281",
-          "cves": [
-            "CVE-2026-0281"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0277  Prisma Access Agent: Improper Certificate Validation on iOS (Severity: MEDIUM)",
-          "severity": "Medium",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0277",
-          "cves": [
-            "CVE-2026-0277"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0282 PAN-OS: File Deletion Vulnerability in Management Web Interface (Severity: LOW)",
-          "severity": "Low",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0282",
-          "cves": [
-            "CVE-2026-0282"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0280 PAN-OS: IPv6 Firewall Policy Bypass (Severity: LOW)",
-          "severity": "Low",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0280",
-          "cves": [
-            "CVE-2026-0280"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0278 Prisma Access Agent: Multiple DLP Policy Bypass Vulnerabilities on Windows (Severity: MEDIUM)",
-          "severity": "Medium",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0278",
-          "cves": [
-            "CVE-2026-0278"
           ],
           "cve_count": 1
         },
@@ -872,43 +840,56 @@
         },
         {
           "advisory_id": "",
-          "title": "CVE-2026-0285 PAN-OS: Server-Side Request Forgery Vulnerability in Management Web Interface (Severity: MEDIUM)",
-          "severity": "Medium",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0285",
-          "cves": [
-            "CVE-2026-0285"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "PAN-SA-2026-0010",
-          "title": "PAN-SA-2026-0010 Chromium and Prisma Browser: Monthly Vulnerability Update (July 2026) (Severity: HIGH)",
-          "severity": "High",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/PAN-SA-2026-0010",
-          "cves": [],
-          "cve_count": 0
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0286 PAN-OS: Authenticated Command Injection in CLI (Severity: MEDIUM)",
-          "severity": "Medium",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0286",
-          "cves": [
-            "CVE-2026-0286"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0276 Cortex XDR Broker VM: Privilege Escalation (PE) Vulnerability (Severity: LOW)",
+          "title": "CVE-2026-0282 PAN-OS: File Deletion Vulnerability in Management Web Interface (Severity: LOW)",
           "severity": "Low",
           "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0276",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0282",
           "cves": [
-            "CVE-2026-0276"
+            "CVE-2026-0282"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0284 PAN-OS: XML Injection Vulnerability in Large Scale VPN (LSVPN) (Severity: MEDIUM)",
+          "severity": "Medium",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0284",
+          "cves": [
+            "CVE-2026-0284"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0281 PAN-OS: Information Disclosure Vulnerability in Management Web Interface (Severity: LOW)",
+          "severity": "Low",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0281",
+          "cves": [
+            "CVE-2026-0281"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0283 PAN-OS: Authentication Bypass Vulnerability in Large Scale VPN (LSVPN) (Severity: MEDIUM)",
+          "severity": "Medium",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0283",
+          "cves": [
+            "CVE-2026-0283"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0277  Prisma Access Agent: Improper Certificate Validation on iOS (Severity: MEDIUM)",
+          "severity": "Medium",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0277",
+          "cves": [
+            "CVE-2026-0277"
           ],
           "cve_count": 1
         },
@@ -925,14 +906,56 @@
         },
         {
           "advisory_id": "",
-          "title": "CVE-2026-0284 PAN-OS: XML Injection Vulnerability in Large Scale VPN (LSVPN) (Severity: MEDIUM)",
+          "title": "CVE-2026-0286 PAN-OS: Authenticated Command Injection in CLI (Severity: MEDIUM)",
           "severity": "Medium",
           "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0284",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0286",
           "cves": [
-            "CVE-2026-0284"
+            "CVE-2026-0286"
           ],
           "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0280 PAN-OS: IPv6 Firewall Policy Bypass (Severity: LOW)",
+          "severity": "Low",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0280",
+          "cves": [
+            "CVE-2026-0280"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0285 PAN-OS: Server-Side Request Forgery Vulnerability in Management Web Interface (Severity: MEDIUM)",
+          "severity": "Medium",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0285",
+          "cves": [
+            "CVE-2026-0285"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0276 Cortex XDR Broker VM: Privilege Escalation (PE) Vulnerability (Severity: LOW)",
+          "severity": "Low",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0276",
+          "cves": [
+            "CVE-2026-0276"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "PAN-SA-2026-0010",
+          "title": "PAN-SA-2026-0010 Chromium and Prisma Browser: Monthly Vulnerability Update (July 2026) (Severity: HIGH)",
+          "severity": "High",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/PAN-SA-2026-0010",
+          "cves": [],
+          "cve_count": 0
         }
       ]
     },
