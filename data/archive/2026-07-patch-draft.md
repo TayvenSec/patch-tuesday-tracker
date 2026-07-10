@@ -66,37 +66,37 @@ Canonical published **10 USNs** covering **511 CVEs** this month.
 ### USN-8530-1 – USN-8530-1: Linux kernel (AWS) vulnerabilities
 **Severity:** Low  **CVEs:** 22
 [View USN](https://ubuntu.com/security/notices/USN-8530-1)
-**CVE IDs:** CVE-2026-43383, CVE-2026-31682, CVE-2026-43011, CVE-2026-46119, CVE-2026-43284, CVE-2026-43503
+**CVE IDs:** CVE-2026-43037, CVE-2026-31402, CVE-2026-23455, CVE-2026-23272, CVE-2026-46119, CVE-2026-31685
 
 ### USN-8529-1 – USN-8529-1: Linux kernel vulnerabilities
 **Severity:** Low  **CVEs:** 21
 [View USN](https://ubuntu.com/security/notices/USN-8529-1)
-**CVE IDs:** CVE-2026-43383, CVE-2026-31682, CVE-2026-43011, CVE-2026-46119, CVE-2026-43503, CVE-2026-43414
+**CVE IDs:** CVE-2026-43037, CVE-2026-31402, CVE-2026-23455, CVE-2026-23272, CVE-2026-46119, CVE-2026-31685
 
 ### USN-8528-1 – USN-8528-1: Linux kernel (Xilinx ZynqMP) vulnerabilities
 **Severity:** Low  **CVEs:** 82
 [View USN](https://ubuntu.com/security/notices/USN-8528-1)
-**CVE IDs:** CVE-2026-43383, CVE-2026-43011, CVE-2026-46195, CVE-2026-43284, CVE-2026-23257, CVE-2026-43414
+**CVE IDs:** CVE-2026-43186, CVE-2026-43406, CVE-2026-46119, CVE-2026-23180, CVE-2026-23216, CVE-2026-23257
 
 ### USN-8527-1 – USN-8527-1: Linux kernel (Raspberry Pi) vulnerabilities
 **Severity:** Low  **CVEs:** 64
 [View USN](https://ubuntu.com/security/notices/USN-8527-1)
-**CVE IDs:** CVE-2026-43383, CVE-2026-31682, CVE-2026-43011, CVE-2025-71089, CVE-2025-40082, CVE-2026-23202
+**CVE IDs:** CVE-2026-43186, CVE-2025-40082, CVE-2026-43037, CVE-2026-31402, CVE-2026-31418, CVE-2026-43341
 
 ### USN-8492-5 – USN-8492-5: Linux kernel (FIPS) vulnerabilities
 **Severity:** Low  **CVEs:** 299
 [View USN](https://ubuntu.com/security/notices/USN-8492-5)
-**CVE IDs:** CVE-2026-43147, CVE-2026-43011, CVE-2026-43231, CVE-2026-43383, CVE-2026-45960, CVE-2026-45936
+**CVE IDs:** CVE-2026-43269, CVE-2026-43182, CVE-2026-43186, CVE-2026-45905, CVE-2026-45978, CVE-2026-45935
 
 ### USN-8526-1 – USN-8526-1: libheif vulnerabilities
 **Severity:** Low  **CVEs:** 5
 [View USN](https://ubuntu.com/security/notices/USN-8526-1)
-**CVE IDs:** CVE-2026-50142, CVE-2026-47714, CVE-2026-47709, CVE-2026-47254, CVE-2026-48029
+**CVE IDs:** CVE-2026-47714, CVE-2026-48029, CVE-2026-47254, CVE-2026-50142, CVE-2026-47709
 
 ### USN-8525-1 – USN-8525-1: curl vulnerabilities
 **Severity:** Low  **CVEs:** 10
 [View USN](https://ubuntu.com/security/notices/USN-8525-1)
-**CVE IDs:** CVE-2026-12064, CVE-2024-11053, CVE-2026-7168, CVE-2026-11564, CVE-2026-11586, CVE-2024-8096
+**CVE IDs:** CVE-2026-7168, CVE-2026-11564, CVE-2026-5545, CVE-2026-11352, CVE-2026-11586, CVE-2024-11053
 
 ### USN-8524-1 – USN-8524-1: Python vulnerability
 **Severity:** Unknown  **CVEs:** 0
@@ -110,7 +110,7 @@ Canonical published **10 USNs** covering **511 CVEs** this month.
 ### USN-8522-1 – USN-8522-1: LibRaw vulnerabilities
 **Severity:** Low  **CVEs:** 6
 [View USN](https://ubuntu.com/security/notices/USN-8522-1)
-**CVE IDs:** CVE-2026-24660, CVE-2026-24450, CVE-2026-20889, CVE-2026-20884, CVE-2026-21413, CVE-2026-5342
+**CVE IDs:** CVE-2026-24450, CVE-2026-20889, CVE-2026-21413, CVE-2026-20884, CVE-2026-24660, CVE-2026-5342
 
 ### Recommended Actions
 
@@ -136,8 +136,13 @@ Debian published **0 DSAs** covering **0 CVEs** this month.
 
 # Chrome OS Updates – July 2026
 
-Google released **5 ChromeOS updates** covering **37 CVEs** this month.
+Google released **6 ChromeOS updates** covering **37 CVEs** this month.
 
+
+## Stable Channel Update for ChromeOS / ChromeOS Flex
+**Date:** 2026-07-10  **CVEs:** 0
+**Version(s):** 149.0.7827.238
+[View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-chromeos_0163471507.html)
 
 ## Long Term Support Channel Update for ChromeOS
 **Date:** 2026-07-09  **CVEs:** 10
@@ -146,7 +151,7 @@ Google released **5 ChromeOS updates** covering **37 CVEs** this month.
 
 ## Stable Channel Update for Desktop
 **Date:** 2026-07-08  **CVEs:** 27
-**Version(s):** 150.0.7871.114, 150.0.7871.115, 150.0.7871.101
+**Version(s):** 150.0.7871.114, 150.0.7871.101, 150.0.7871.115
 [View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01162222768.html)
 
 ## Dev Channel Update for ChromeOS / ChromeOS Flex
@@ -156,13 +161,8 @@ Google released **5 ChromeOS updates** covering **37 CVEs** this month.
 
 ## Stable Channel Update for Desktop
 **Date:** 2026-07-07  **CVEs:** 0
-**Version(s):** 150.0.7871.100, 150.0.7871.47, 150.0.7871.101
+**Version(s):** 150.0.7871.101, 150.0.7871.100, 150.0.7871.47
 [View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop.html)
-
-## Stable Channel Update for ChromeOS / ChromeOS Flex
-**Date:** 2026-07-06  **CVEs:** 0
-**Version(s):** 149.0.7827.232
-[View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-chromeos.html)
 
 ### Recommended Actions
 
@@ -242,4 +242,4 @@ Cisco published **0 IOS/IOS XE advisories** — Critical: 0, High: 0. *(HTML scr
 
 
 ---
-*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-10T10:42:29.959592Z*
+*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-10T21:18:38.115094Z*

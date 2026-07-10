@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-10T10:42:29.959592Z",
+  "collected_at": "2026-07-10T21:18:38.115094Z",
   "year": 2026,
   "month": 7,
   "month_label": "July 2026",
@@ -476,21 +476,21 @@
           "severity": "Low",
           "cve_count": 22,
           "cves": [
-            "CVE-2026-43383",
-            "CVE-2026-31682",
-            "CVE-2026-43011",
+            "CVE-2026-43037",
+            "CVE-2026-31402",
+            "CVE-2026-23455",
+            "CVE-2026-23272",
             "CVE-2026-46119",
-            "CVE-2026-43284",
-            "CVE-2026-43503",
-            "CVE-2026-43414",
-            "CVE-2026-45988",
-            "CVE-2026-31659",
-            "CVE-2026-31637",
-            "CVE-2026-31607",
+            "CVE-2026-31685",
+            "CVE-2021-47202",
             "CVE-2026-43407",
+            "CVE-2026-31682",
+            "CVE-2026-31659",
+            "CVE-2026-43038",
+            "CVE-2026-43414",
+            "CVE-2026-43284",
             "CVE-2026-46243",
-            "CVE-2026-46043",
-            "CVE-2024-56643"
+            "CVE-2026-45988"
           ],
           "summary": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the\nRxRPC networking subsystem when processing paged fragments. A local\nattacker could"
         },
@@ -502,21 +502,21 @@
           "severity": "Low",
           "cve_count": 21,
           "cves": [
-            "CVE-2026-43383",
-            "CVE-2026-31682",
-            "CVE-2026-43011",
+            "CVE-2026-43037",
+            "CVE-2026-31402",
+            "CVE-2026-23455",
+            "CVE-2026-23272",
             "CVE-2026-46119",
-            "CVE-2026-43503",
-            "CVE-2026-43414",
-            "CVE-2026-45988",
-            "CVE-2026-31659",
-            "CVE-2026-31637",
-            "CVE-2026-31607",
+            "CVE-2026-31685",
+            "CVE-2021-47202",
             "CVE-2026-43407",
+            "CVE-2026-31682",
+            "CVE-2026-31659",
+            "CVE-2026-43038",
+            "CVE-2026-43414",
             "CVE-2026-46243",
-            "CVE-2026-46043",
-            "CVE-2024-56643",
-            "CVE-2026-43037"
+            "CVE-2026-45988",
+            "CVE-2026-43503"
           ],
           "summary": "It was discovered that a logic flaw existed in the XFRM ESP-in-TCP\nsubsystem in the Linux kernel when handling socket buffer fragments. This\nflaw is known as Fragnesia. A local attacker could use this to escalate\nprivileges, or possibly escape a container. (CVE-2026-43503)\n\nSeveral security issues w"
         },
@@ -528,21 +528,21 @@
           "severity": "Low",
           "cve_count": 82,
           "cves": [
-            "CVE-2026-43383",
-            "CVE-2026-43011",
-            "CVE-2026-46195",
-            "CVE-2026-43284",
+            "CVE-2026-43186",
+            "CVE-2026-43406",
+            "CVE-2026-46119",
+            "CVE-2026-23180",
+            "CVE-2026-23216",
             "CVE-2026-23257",
-            "CVE-2026-43414",
-            "CVE-2026-43117",
-            "CVE-2025-37778",
-            "CVE-2026-23256",
+            "CVE-2022-48816",
+            "CVE-2025-38201",
+            "CVE-2026-31533",
+            "CVE-2026-45988",
             "CVE-2026-31657",
-            "CVE-2026-31659",
-            "CVE-2026-23450",
-            "CVE-2026-43078",
-            "CVE-2026-43407",
-            "CVE-2026-31418"
+            "CVE-2026-31431",
+            "CVE-2026-43071",
+            "CVE-2026-43033",
+            "CVE-2026-23428"
           ],
           "summary": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privileges, or possibly escape\na container. (CVE-2026-31431)\n\nIt was discovered that the Linux kernel did"
         },
@@ -554,21 +554,21 @@
           "severity": "Low",
           "cve_count": 64,
           "cves": [
-            "CVE-2026-43383",
-            "CVE-2026-31682",
-            "CVE-2026-43011",
-            "CVE-2025-71089",
+            "CVE-2026-43186",
             "CVE-2025-40082",
-            "CVE-2026-23202",
-            "CVE-2026-46119",
-            "CVE-2026-46195",
-            "CVE-2026-23257",
+            "CVE-2026-43037",
+            "CVE-2026-31402",
+            "CVE-2026-31418",
+            "CVE-2026-43341",
+            "CVE-2026-23455",
             "CVE-2026-23272",
-            "CVE-2026-43117",
-            "CVE-2026-43414",
-            "CVE-2026-23278",
-            "CVE-2025-37778",
-            "CVE-2026-23256"
+            "CVE-2026-43406",
+            "CVE-2026-46119",
+            "CVE-2025-68214",
+            "CVE-2026-23180",
+            "CVE-2026-23216",
+            "CVE-2026-31685",
+            "CVE-2026-43407"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - RISC-V architecture;\n  - Cryptographic API;\n  - InfiniBand drivers;\n  - IOMMU subsystem;\n  - Network drivers;\n  - ST"
         },
@@ -580,21 +580,21 @@
           "severity": "Low",
           "cve_count": 299,
           "cves": [
-            "CVE-2026-43147",
-            "CVE-2026-43011",
-            "CVE-2026-43231",
-            "CVE-2026-43383",
-            "CVE-2026-45960",
-            "CVE-2026-45936",
-            "CVE-2026-46195",
-            "CVE-2026-43268",
-            "CVE-2026-23237",
-            "CVE-2026-43218",
-            "CVE-2026-45873",
-            "CVE-2026-45984",
-            "CVE-2026-45982",
-            "CVE-2026-43414",
-            "CVE-2026-43117"
+            "CVE-2026-43269",
+            "CVE-2026-43182",
+            "CVE-2026-43186",
+            "CVE-2026-45905",
+            "CVE-2026-45978",
+            "CVE-2026-45935",
+            "CVE-2026-43248",
+            "CVE-2026-43133",
+            "CVE-2026-45856",
+            "CVE-2026-43156",
+            "CVE-2026-45864",
+            "CVE-2026-43258",
+            "CVE-2026-43406",
+            "CVE-2026-43167",
+            "CVE-2026-46119"
           ],
           "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - x86 architecture;\n  - Block layer subsystem"
         },
@@ -606,11 +606,11 @@
           "severity": "Low",
           "cve_count": 5,
           "cves": [
-            "CVE-2026-50142",
             "CVE-2026-47714",
-            "CVE-2026-47709",
+            "CVE-2026-48029",
             "CVE-2026-47254",
-            "CVE-2026-48029"
+            "CVE-2026-50142",
+            "CVE-2026-47709"
           ],
           "summary": "Xianrui Dong discovered that libheif had an out-of-bounds read in its\nHEIF sequence track parser. An attacker could possibly use this issue\nto cause a denial of service or obtain sensitive information. This issue\nonly affected Ubuntu 26.04 LTS. (CVE-2026-47254)\n\nJunyi Liu discovered that libheif had"
         },
@@ -622,16 +622,16 @@
           "severity": "Low",
           "cve_count": 10,
           "cves": [
-            "CVE-2026-12064",
-            "CVE-2024-11053",
             "CVE-2026-7168",
             "CVE-2026-11564",
-            "CVE-2026-11586",
-            "CVE-2024-8096",
-            "CVE-2026-5773",
-            "CVE-2026-10536",
+            "CVE-2026-5545",
             "CVE-2026-11352",
-            "CVE-2026-5545"
+            "CVE-2026-11586",
+            "CVE-2024-11053",
+            "CVE-2024-8096",
+            "CVE-2026-10536",
+            "CVE-2026-12064",
+            "CVE-2026-5773"
           ],
           "summary": "Harry Sintonen discovered that curl incorrectly handled credentials when\nfollowing HTTP redirects in conjunction with .netrc files. An attacker\ncould possibly use this issue to obtain sensitive information. This issue\nonly affected Ubuntu 14.04 LTS, Ubuntu 16.04 LTS, and Ubuntu 18.04 LTS.\n(CVE-2024-"
         },
@@ -666,11 +666,11 @@
           "severity": "Low",
           "cve_count": 6,
           "cves": [
-            "CVE-2026-24660",
             "CVE-2026-24450",
             "CVE-2026-20889",
-            "CVE-2026-20884",
             "CVE-2026-21413",
+            "CVE-2026-20884",
+            "CVE-2026-24660",
             "CVE-2026-5342"
           ],
           "summary": "It was discovered that LibRaw incorrectly handled certain Nikon RAW image\nfiles. An attacker could possibly use this issue to cause LibRaw to crash,\nresulting in a denial of service. (CVE-2026-5342)\n\nIt was discovered that LibRaw had an integer overflow in its DNG image\nloader. An attacker could pos"
@@ -705,10 +705,21 @@
       "platform": "chromeos",
       "month": "July 2026",
       "source": "https://chromereleases.googleblog.com/feeds/posts/default",
-      "total_releases": 5,
+      "total_releases": 6,
       "total_cves": 37,
-      "summary": "ChromeOS released 5 updates in July 2026 covering 37 CVEs.",
+      "summary": "ChromeOS released 6 updates in July 2026 covering 37 CVEs.",
       "releases": [
+        {
+          "title": "Stable Channel Update for ChromeOS / ChromeOS Flex",
+          "date": "2026-07-10",
+          "link": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-chromeos_0163471507.html",
+          "versions": [
+            "149.0.7827.238"
+          ],
+          "cves": [],
+          "cve_count": 0,
+          "security_fix_count": 0
+        },
         {
           "title": "Long Term Support Channel Update for ChromeOS",
           "date": "2026-07-09",
@@ -717,16 +728,16 @@
             "144.0.7559.257"
           ],
           "cves": [
-            "CVE-2026-10006",
-            "CVE-2026-9897",
             "CVE-2026-12467",
-            "CVE-2026-13029",
-            "CVE-2026-11668",
             "CVE-2026-12033",
-            "CVE-2026-9931",
+            "CVE-2026-9897",
             "CVE-2026-11673",
+            "CVE-2026-8514",
+            "CVE-2026-11668",
+            "CVE-2026-10006",
             "CVE-2026-12443",
-            "CVE-2026-8514"
+            "CVE-2026-13029",
+            "CVE-2026-9931"
           ],
           "cve_count": 10,
           "security_fix_count": 11
@@ -737,30 +748,30 @@
           "link": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01162222768.html",
           "versions": [
             "150.0.7871.114",
-            "150.0.7871.115",
-            "150.0.7871.101"
+            "150.0.7871.101",
+            "150.0.7871.115"
           ],
           "cves": [
-            "CVE-2026-15109",
-            "CVE-2026-15115",
-            "CVE-2026-15121",
+            "CVE-2026-15132",
             "CVE-2026-15128",
-            "CVE-2026-15123",
-            "CVE-2026-15129",
-            "CVE-2026-15114",
-            "CVE-2026-15107",
-            "CVE-2026-15111",
-            "CVE-2026-15133",
             "CVE-2026-15116",
-            "CVE-2026-15119",
-            "CVE-2026-15125",
-            "CVE-2026-15124",
-            "CVE-2026-15113",
+            "CVE-2026-15110",
+            "CVE-2026-15114",
             "CVE-2026-15126",
-            "CVE-2026-15112",
-            "CVE-2026-15108",
+            "CVE-2026-15107",
+            "CVE-2026-15124",
+            "CVE-2026-15133",
+            "CVE-2026-15117",
+            "CVE-2026-15123",
+            "CVE-2026-15130",
+            "CVE-2026-15115",
+            "CVE-2026-15122",
             "CVE-2026-15118",
-            "CVE-2026-15110"
+            "CVE-2026-15120",
+            "CVE-2026-15121",
+            "CVE-2026-15127",
+            "CVE-2026-15109",
+            "CVE-2026-15112"
           ],
           "cve_count": 27,
           "security_fix_count": 32
@@ -781,9 +792,9 @@
           "date": "2026-07-07",
           "link": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop.html",
           "versions": [
+            "150.0.7871.101",
             "150.0.7871.100",
-            "150.0.7871.47",
-            "150.0.7871.101"
+            "150.0.7871.47"
           ],
           "cves": [],
           "cve_count": 0,
@@ -829,12 +840,12 @@
         },
         {
           "advisory_id": "",
-          "title": "CVE-2026-0288 PAN-OS: Buffer Overflow Vulnerabilities in User-ID Terminal Server Agent (Severity: HIGH)",
-          "severity": "High",
+          "title": "CVE-2026-0283 PAN-OS: Authentication Bypass Vulnerability in Large Scale VPN (LSVPN) (Severity: MEDIUM)",
+          "severity": "Medium",
           "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0288",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0283",
           "cves": [
-            "CVE-2026-0288"
+            "CVE-2026-0283"
           ],
           "cve_count": 1
         },
@@ -851,12 +862,12 @@
         },
         {
           "advisory_id": "",
-          "title": "CVE-2026-0284 PAN-OS: XML Injection Vulnerability in Large Scale VPN (LSVPN) (Severity: MEDIUM)",
+          "title": "CVE-2026-0277  Prisma Access Agent: Improper Certificate Validation on iOS (Severity: MEDIUM)",
           "severity": "Medium",
           "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0284",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0277",
           "cves": [
-            "CVE-2026-0284"
+            "CVE-2026-0277"
           ],
           "cve_count": 1
         },
@@ -873,45 +884,12 @@
         },
         {
           "advisory_id": "",
-          "title": "CVE-2026-0283 PAN-OS: Authentication Bypass Vulnerability in Large Scale VPN (LSVPN) (Severity: MEDIUM)",
+          "title": "CVE-2026-0285 PAN-OS: Server-Side Request Forgery Vulnerability in Management Web Interface (Severity: MEDIUM)",
           "severity": "Medium",
           "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0283",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0285",
           "cves": [
-            "CVE-2026-0283"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0277  Prisma Access Agent: Improper Certificate Validation on iOS (Severity: MEDIUM)",
-          "severity": "Medium",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0277",
-          "cves": [
-            "CVE-2026-0277"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0287 PAN-OS: Denial of Service Vulnerabilities in Network Traffic Processing (Severity: MEDIUM)",
-          "severity": "Medium",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0287",
-          "cves": [
-            "CVE-2026-0287"
-          ],
-          "cve_count": 1
-        },
-        {
-          "advisory_id": "",
-          "title": "CVE-2026-0286 PAN-OS: Authenticated Command Injection in CLI (Severity: MEDIUM)",
-          "severity": "Medium",
-          "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0286",
-          "cves": [
-            "CVE-2026-0286"
+            "CVE-2026-0285"
           ],
           "cve_count": 1
         },
@@ -928,12 +906,45 @@
         },
         {
           "advisory_id": "",
-          "title": "CVE-2026-0285 PAN-OS: Server-Side Request Forgery Vulnerability in Management Web Interface (Severity: MEDIUM)",
+          "title": "CVE-2026-0288 PAN-OS: Buffer Overflow Vulnerabilities in User-ID Terminal Server Agent (Severity: HIGH)",
+          "severity": "High",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0288",
+          "cves": [
+            "CVE-2026-0288"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0286 PAN-OS: Authenticated Command Injection in CLI (Severity: MEDIUM)",
           "severity": "Medium",
           "date": "2026-07-08",
-          "link": "https://security.paloaltonetworks.com/CVE-2026-0285",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0286",
           "cves": [
-            "CVE-2026-0285"
+            "CVE-2026-0286"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0287 PAN-OS: Denial of Service Vulnerabilities in Network Traffic Processing (Severity: MEDIUM)",
+          "severity": "Medium",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0287",
+          "cves": [
+            "CVE-2026-0287"
+          ],
+          "cve_count": 1
+        },
+        {
+          "advisory_id": "",
+          "title": "CVE-2026-0284 PAN-OS: XML Injection Vulnerability in Large Scale VPN (LSVPN) (Severity: MEDIUM)",
+          "severity": "Medium",
+          "date": "2026-07-08",
+          "link": "https://security.paloaltonetworks.com/CVE-2026-0284",
+          "cves": [
+            "CVE-2026-0284"
           ],
           "cve_count": 1
         },
