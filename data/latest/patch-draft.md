@@ -66,37 +66,37 @@ Canonical published **10 USNs** covering **511 CVEs** this month.
 ### USN-8530-1 – USN-8530-1: Linux kernel (AWS) vulnerabilities
 **Severity:** Low  **CVEs:** 22
 [View USN](https://ubuntu.com/security/notices/USN-8530-1)
-**CVE IDs:** CVE-2024-56643, CVE-2026-43503, CVE-2026-43037, CVE-2026-31682, CVE-2026-23272, CVE-2026-31402
+**CVE IDs:** CVE-2026-46243, CVE-2026-46043, CVE-2026-43284, CVE-2026-31637, CVE-2026-43011, CVE-2026-23455
 
 ### USN-8529-1 – USN-8529-1: Linux kernel vulnerabilities
 **Severity:** Low  **CVEs:** 21
 [View USN](https://ubuntu.com/security/notices/USN-8529-1)
-**CVE IDs:** CVE-2024-56643, CVE-2026-43503, CVE-2026-43037, CVE-2026-31682, CVE-2026-23272, CVE-2026-31402
+**CVE IDs:** CVE-2026-46243, CVE-2026-46043, CVE-2026-31637, CVE-2026-43011, CVE-2026-23455, CVE-2026-43038
 
 ### USN-8528-1 – USN-8528-1: Linux kernel (Xilinx ZynqMP) vulnerabilities
 **Severity:** Low  **CVEs:** 82
 [View USN](https://ubuntu.com/security/notices/USN-8528-1)
-**CVE IDs:** CVE-2026-43033, CVE-2026-31669, CVE-2026-43071, CVE-2026-43341, CVE-2026-43117, CVE-2026-43037
+**CVE IDs:** CVE-2026-23428, CVE-2026-31504, CVE-2024-35862, CVE-2026-43117, CVE-2025-37924, CVE-2026-46195
 
 ### USN-8527-1 – USN-8527-1: Linux kernel (Raspberry Pi) vulnerabilities
 **Severity:** Low  **CVEs:** 64
 [View USN](https://ubuntu.com/security/notices/USN-8527-1)
-**CVE IDs:** CVE-2026-23206, CVE-2026-31669, CVE-2026-43071, CVE-2026-23278, CVE-2026-43341, CVE-2026-43117
+**CVE IDs:** CVE-2026-23428, CVE-2025-37778, CVE-2026-23206, CVE-2026-23278, CVE-2025-71222, CVE-2026-23180
 
 ### USN-8492-5 – USN-8492-5: Linux kernel (FIPS) vulnerabilities
 **Severity:** Low  **CVEs:** 299
 [View USN](https://ubuntu.com/security/notices/USN-8492-5)
-**CVE IDs:** CVE-2026-43270, CVE-2026-43261, CVE-2026-43271, CVE-2026-45857, CVE-2026-45875, CVE-2026-45974
+**CVE IDs:** CVE-2026-45916, CVE-2026-23428, CVE-2026-43221, CVE-2026-43238, CVE-2025-71239, CVE-2025-71291
 
 ### USN-8526-1 – USN-8526-1: libheif vulnerabilities
 **Severity:** Low  **CVEs:** 5
 [View USN](https://ubuntu.com/security/notices/USN-8526-1)
-**CVE IDs:** CVE-2026-47709, CVE-2026-48029, CVE-2026-50142, CVE-2026-47254, CVE-2026-47714
+**CVE IDs:** CVE-2026-50142, CVE-2026-47714, CVE-2026-47254, CVE-2026-47709, CVE-2026-48029
 
 ### USN-8525-1 – USN-8525-1: curl vulnerabilities
 **Severity:** Low  **CVEs:** 10
 [View USN](https://ubuntu.com/security/notices/USN-8525-1)
-**CVE IDs:** CVE-2026-11564, CVE-2024-11053, CVE-2024-8096, CVE-2026-11586, CVE-2026-11352, CVE-2026-5545
+**CVE IDs:** CVE-2026-11586, CVE-2026-7168, CVE-2024-8096, CVE-2026-10536, CVE-2026-12064, CVE-2026-5773
 
 ### USN-8524-1 – USN-8524-1: Python vulnerability
 **Severity:** Unknown  **CVEs:** 0
@@ -105,12 +105,12 @@ Canonical published **10 USNs** covering **511 CVEs** this month.
 ### USN-8523-1 – USN-8523-1: libsoup vulnerabilities
 **Severity:** Unknown  **CVEs:** 2
 [View USN](https://ubuntu.com/security/notices/USN-8523-1)
-**CVE IDs:** CVE-2026-2369, CVE-2026-5119
+**CVE IDs:** CVE-2026-5119, CVE-2026-2369
 
 ### USN-8522-1 – USN-8522-1: LibRaw vulnerabilities
 **Severity:** Low  **CVEs:** 6
 [View USN](https://ubuntu.com/security/notices/USN-8522-1)
-**CVE IDs:** CVE-2026-20884, CVE-2026-21413, CVE-2026-24450, CVE-2026-5342, CVE-2026-24660, CVE-2026-20889
+**CVE IDs:** CVE-2026-20889, CVE-2026-20884, CVE-2026-5342, CVE-2026-21413, CVE-2026-24660, CVE-2026-24450
 
 ### Recommended Actions
 
@@ -151,7 +151,7 @@ Google released **6 ChromeOS updates** covering **37 CVEs** this month.
 
 ## Stable Channel Update for Desktop
 **Date:** 2026-07-08  **CVEs:** 27
-**Version(s):** 150.0.7871.101, 150.0.7871.114, 150.0.7871.115
+**Version(s):** 150.0.7871.115, 150.0.7871.114, 150.0.7871.101
 [View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01162222768.html)
 
 ## Dev Channel Update for ChromeOS / ChromeOS Flex
@@ -161,7 +161,7 @@ Google released **6 ChromeOS updates** covering **37 CVEs** this month.
 
 ## Stable Channel Update for Desktop
 **Date:** 2026-07-07  **CVEs:** 0
-**Version(s):** 150.0.7871.101, 150.0.7871.100, 150.0.7871.47
+**Version(s):** 150.0.7871.47, 150.0.7871.100, 150.0.7871.101
 [View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop.html)
 
 ### Recommended Actions
@@ -179,8 +179,8 @@ Palo Alto Networks published **13 advisories** — Critical: 0, High: 2.
 
 ## Critical & High Advisories
 
-- **PAN-SA-2026-0010** [High] — PAN-SA-2026-0010 Chromium and Prisma Browser: Monthly Vulnerability Update (July 2026) (Severity: HI
 - **** [High] — CVE-2026-0288 PAN-OS: Buffer Overflow Vulnerabilities in User-ID Terminal Server Agent (Severity: HI
+- **PAN-SA-2026-0010** [High] — PAN-SA-2026-0010 Chromium and Prisma Browser: Monthly Vulnerability Update (July 2026) (Severity: HI
 
 ### Recommended Actions
 
@@ -242,4 +242,4 @@ Cisco published **0 IOS/IOS XE advisories** — Critical: 0, High: 0. *(HTML scr
 
 
 ---
-*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-12T09:41:06.010162Z*
+*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-13T10:47:26.612085Z*
