@@ -1,6 +1,6 @@
 # JULY 2026 SECURITY PATCH ROUNDUP – Windows, iOS, macOS, Android, Linux & More
 
-July 2026's patch cycle brings updates across all major platforms. This month's roundup covers Windows, Apple, Android, Ubuntu, Red Hat, Debian, ChromeOS, Palo Alto Networks, and Cisco IOS/IOS XE. Combined, this month addresses approximately **1134+ CVEs** across the ecosystem.
+July 2026's patch cycle brings updates across all major platforms. This month's roundup covers Windows, Apple, Android, Ubuntu, Red Hat, Debian, ChromeOS, Palo Alto Networks, and Cisco IOS/IOS XE. Combined, this month addresses approximately **837+ CVEs** across the ecosystem.
 
 Below is the full breakdown.
 
@@ -8,7 +8,7 @@ Below is the full breakdown.
 
 # Windows Updates – 2026-Jul
 
-Microsoft addressed **574 CVEs** this month — **3 Critical** and **20 Important**.
+Microsoft addressed **578 CVEs** this month — **3 Critical** and **20 Important**.
 
 
 ## Key KB Articles
@@ -57,60 +57,60 @@ Google's July 2026 bulletin addresses **0 CVEs** across Framework, System, Kerne
 
 # Ubuntu Security Notices – July 2026
 
-Canonical published **10 USNs** covering **511 CVEs** this month.
+Canonical published **10 USNs** covering **210 CVEs** this month.
 
 
 ## Key Security Notices
 
 
+### USN-8535-1 – USN-8535-1: PipeWire vulnerabilities
+**Severity:** Unknown  **CVEs:** 2
+[View USN](https://ubuntu.com/security/notices/USN-8535-1)
+**CVE IDs:** CVE-2026-14330, CVE-2026-14324
+
+### USN-8534-1 – USN-8534-1: LibreOffice vulnerabilities
+**Severity:** Unknown  **CVEs:** 6
+[View USN](https://ubuntu.com/security/notices/USN-8534-1)
+**CVE IDs:** CVE-2026-6045, CVE-2026-6040, CVE-2026-8356, CVE-2026-8358, CVE-2026-8357, CVE-2026-6039
+
+### USN-8533-1 – USN-8533-1: OpenSSH vulnerabilities
+**Severity:** Unknown  **CVEs:** 8
+[View USN](https://ubuntu.com/security/notices/USN-8533-1)
+**CVE IDs:** CVE-2026-59997, CVE-2026-59999, CVE-2026-60002, CVE-2026-59998, CVE-2026-59996, CVE-2026-60000
+
+### USN-8532-1 – USN-8532-1: libssh2 vulnerabilities
+**Severity:** Unknown  **CVEs:** 2
+[View USN](https://ubuntu.com/security/notices/USN-8532-1)
+**CVE IDs:** CVE-2026-58050, CVE-2026-58051
+
+### USN-8496-3 – USN-8496-3: cifs-utils vulnerability
+**Severity:** Unknown  **CVEs:** 0
+[View USN](https://ubuntu.com/security/notices/USN-8496-3)
+
+### USN-8531-1 – USN-8531-1: libexif vulnerabilities
+**Severity:** Low  **CVEs:** 3
+[View USN](https://ubuntu.com/security/notices/USN-8531-1)
+**CVE IDs:** CVE-2026-32775, CVE-2026-40385, CVE-2026-40386
+
 ### USN-8530-1 – USN-8530-1: Linux kernel (AWS) vulnerabilities
 **Severity:** Low  **CVEs:** 22
 [View USN](https://ubuntu.com/security/notices/USN-8530-1)
-**CVE IDs:** CVE-2026-46243, CVE-2026-46043, CVE-2026-43284, CVE-2026-31637, CVE-2026-43011, CVE-2026-23455
+**CVE IDs:** CVE-2021-47202, CVE-2026-43284, CVE-2026-23272, CVE-2026-31659, CVE-2026-31685, CVE-2026-31607
 
 ### USN-8529-1 – USN-8529-1: Linux kernel vulnerabilities
 **Severity:** Low  **CVEs:** 21
 [View USN](https://ubuntu.com/security/notices/USN-8529-1)
-**CVE IDs:** CVE-2026-46243, CVE-2026-46043, CVE-2026-31637, CVE-2026-43011, CVE-2026-23455, CVE-2026-43038
+**CVE IDs:** CVE-2021-47202, CVE-2026-23272, CVE-2026-31659, CVE-2026-31685, CVE-2026-31607, CVE-2026-46243
 
 ### USN-8528-1 – USN-8528-1: Linux kernel (Xilinx ZynqMP) vulnerabilities
 **Severity:** Low  **CVEs:** 82
 [View USN](https://ubuntu.com/security/notices/USN-8528-1)
-**CVE IDs:** CVE-2026-23428, CVE-2026-31504, CVE-2024-35862, CVE-2026-43117, CVE-2025-37924, CVE-2026-46195
+**CVE IDs:** CVE-2026-23198, CVE-2026-23272, CVE-2026-31649, CVE-2026-23351, CVE-2026-43078, CVE-2026-43500
 
 ### USN-8527-1 – USN-8527-1: Linux kernel (Raspberry Pi) vulnerabilities
 **Severity:** Low  **CVEs:** 64
 [View USN](https://ubuntu.com/security/notices/USN-8527-1)
-**CVE IDs:** CVE-2026-23428, CVE-2025-37778, CVE-2026-23206, CVE-2026-23278, CVE-2025-71222, CVE-2026-23180
-
-### USN-8492-5 – USN-8492-5: Linux kernel (FIPS) vulnerabilities
-**Severity:** Low  **CVEs:** 299
-[View USN](https://ubuntu.com/security/notices/USN-8492-5)
-**CVE IDs:** CVE-2026-45916, CVE-2026-23428, CVE-2026-43221, CVE-2026-43238, CVE-2025-71239, CVE-2025-71291
-
-### USN-8526-1 – USN-8526-1: libheif vulnerabilities
-**Severity:** Low  **CVEs:** 5
-[View USN](https://ubuntu.com/security/notices/USN-8526-1)
-**CVE IDs:** CVE-2026-50142, CVE-2026-47714, CVE-2026-47254, CVE-2026-47709, CVE-2026-48029
-
-### USN-8525-1 – USN-8525-1: curl vulnerabilities
-**Severity:** Low  **CVEs:** 10
-[View USN](https://ubuntu.com/security/notices/USN-8525-1)
-**CVE IDs:** CVE-2026-11586, CVE-2026-7168, CVE-2024-8096, CVE-2026-10536, CVE-2026-12064, CVE-2026-5773
-
-### USN-8524-1 – USN-8524-1: Python vulnerability
-**Severity:** Unknown  **CVEs:** 0
-[View USN](https://ubuntu.com/security/notices/USN-8524-1)
-
-### USN-8523-1 – USN-8523-1: libsoup vulnerabilities
-**Severity:** Unknown  **CVEs:** 2
-[View USN](https://ubuntu.com/security/notices/USN-8523-1)
-**CVE IDs:** CVE-2026-5119, CVE-2026-2369
-
-### USN-8522-1 – USN-8522-1: LibRaw vulnerabilities
-**Severity:** Low  **CVEs:** 6
-[View USN](https://ubuntu.com/security/notices/USN-8522-1)
-**CVE IDs:** CVE-2026-20889, CVE-2026-20884, CVE-2026-5342, CVE-2026-21413, CVE-2026-24660, CVE-2026-24450
+**CVE IDs:** CVE-2026-43493, CVE-2026-23198, CVE-2026-31657, CVE-2026-43304, CVE-2026-23262, CVE-2025-40082
 
 ### Recommended Actions
 
@@ -161,7 +161,7 @@ Google released **6 ChromeOS updates** covering **37 CVEs** this month.
 
 ## Stable Channel Update for Desktop
 **Date:** 2026-07-07  **CVEs:** 0
-**Version(s):** 150.0.7871.47, 150.0.7871.100, 150.0.7871.101
+**Version(s):** 150.0.7871.100, 150.0.7871.101, 150.0.7871.47
 [View release notes](http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop.html)
 
 ### Recommended Actions
@@ -242,4 +242,4 @@ Cisco published **0 IOS/IOS XE advisories** — Critical: 0, High: 0. *(HTML scr
 
 
 ---
-*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-13T10:47:26.612085Z*
+*Data collected automatically via [patch-tuesday-tracker](https://github.com/YOUR_USERNAME/patch-tuesday-tracker). Generated: 2026-07-14T09:43:59.729545Z*
