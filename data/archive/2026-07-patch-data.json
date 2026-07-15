@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-07-14T09:43:59.729545Z",
+  "collected_at": "2026-07-15T08:19:26.977853Z",
   "year": 2026,
   "month": 7,
   "month_label": "July 2026",
@@ -8,10 +8,10 @@
       "platform": "windows",
       "month": "2026-Jul",
       "source": "https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Jul",
-      "total_cves": 578,
-      "critical_count": 9,
-      "important_count": 83,
-      "summary": "Microsoft released 578 CVEs for 2026-Jul. 9 Critical, 83 Important.",
+      "total_cves": 1164,
+      "critical_count": 66,
+      "important_count": 600,
+      "summary": "Microsoft released 1164 CVEs for 2026-Jul. 66 Critical, 600 Important.",
       "cves": [
         {
           "cve_id": "CVE-2026-53355",
@@ -447,6 +447,14 @@
       ],
       "kb_articles": [
         {
+          "name": "Windows",
+          "product_id": ""
+        },
+        {
+          "name": "SQL Server",
+          "product_id": ""
+        },
+        {
           "name": "Server Software",
           "product_id": ""
         }
@@ -465,198 +473,162 @@
       "month": "July 2026",
       "source": "https://ubuntu.com/security/notices/rss.xml",
       "total_notices": 10,
-      "total_cves": 210,
-      "summary": "Ubuntu published 10 security notices in July 2026 covering 210 CVEs.",
+      "total_cves": 93,
+      "summary": "Ubuntu published 10 security notices in July 2026 covering 93 CVEs.",
       "notices": [
         {
-          "usn_id": "USN-8535-1",
-          "title": "USN-8535-1: PipeWire vulnerabilities",
-          "date": "2026-07-13",
-          "link": "https://ubuntu.com/security/notices/USN-8535-1",
+          "usn_id": "USN-8545-1",
+          "title": "USN-8545-1: Linux kernel (HWE) vulnerabilities",
+          "date": "2026-07-15",
+          "link": "https://ubuntu.com/security/notices/USN-8545-1",
+          "severity": "Low",
+          "cve_count": 62,
+          "cves": [
+            "CVE-2026-31436",
+            "CVE-2026-23450",
+            "CVE-2026-43384",
+            "CVE-2026-46316",
+            "CVE-2026-43011",
+            "CVE-2026-43376",
+            "CVE-2026-23428",
+            "CVE-2026-23455",
+            "CVE-2026-43383",
+            "CVE-2026-46043",
+            "CVE-2026-43037",
+            "CVE-2026-43038",
+            "CVE-2026-46135",
+            "CVE-2026-46266",
+            "CVE-2026-31668"
+          ],
+          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - ARM64 architecture;\n  - Block layer subsystem;\n  - Cryptographic API;\n  - DMA engine subsystem;\n  - InfiniBand drive"
+        },
+        {
+          "usn_id": "USN-8543-1",
+          "title": "USN-8543-1: Wget vulnerabilities",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8543-1",
+          "severity": "Low",
+          "cve_count": 5,
+          "cves": [
+            "CVE-2026-58471",
+            "CVE-2026-58470",
+            "CVE-2026-58469",
+            "CVE-2026-58472",
+            "CVE-2024-38428"
+          ],
+          "summary": "It was discovered that Wget mishandled semicolons in the userinfo\nsubcomponent of a URL. A remote attacker could possibly use this issue\nto trick a user into connecting to a different host than intended. This\nissue only affected Ubuntu 14.04 LTS. (CVE-2024-38428)\n\nIt was discovered that Wget incorre"
+        },
+        {
+          "usn_id": "USN-8542-1",
+          "title": "USN-8542-1: Dnsmasq vulnerabilities",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8542-1",
           "severity": "Unknown",
           "cve_count": 2,
           "cves": [
-            "CVE-2026-14330",
-            "CVE-2026-14324"
+            "CVE-2026-12725",
+            "CVE-2026-12969"
           ],
-          "summary": "It was discovered that PipeWire accepted unbounded Content-Length values\nin its RAOP module. A remote attacker could possibly use this issue to cause\na denial of service. This issue only affected Ubuntu 24.04 LTS.\n(CVE-2026-14324)\n\nIt was discovered that PipeWire performed multiple unbounded stack\na"
+          "summary": "Yiwei Hou discovered that Dnsmasq incorrectly handled logging of DS or\nDNSKEY. A remote attacker could possibly use this issue to cause a\ndenial of service. (CVE-2026-12725)\n\nIt was discovered that Dnsmasq incorrectly validated the length of\nfixed-length DNS record fields when parsing NS section rec"
         },
         {
-          "usn_id": "USN-8534-1",
-          "title": "USN-8534-1: LibreOffice vulnerabilities",
-          "date": "2026-07-13",
-          "link": "https://ubuntu.com/security/notices/USN-8534-1",
+          "usn_id": "USN-8526-2",
+          "title": "USN-8526-2: libheif vulnerabilities",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8526-2",
+          "severity": "Low",
+          "cve_count": 2,
+          "cves": [
+            "CVE-2026-47709",
+            "CVE-2026-47714"
+          ],
+          "summary": "USN-8526-1 fixed vulnerabilities in libheif. This update provides the\ncorresponding updates for CVE-2026-47709 and CVE-2026-47714 in\nUbuntu 24.04 LTS.\n\nOriginal advisory details:\n\n Junyi Liu discovered that libheif had a null pointer dereference in its\n image tiling interface. An attacker could poss"
+        },
+        {
+          "usn_id": "USN-8541-1",
+          "title": "USN-8541-1: Vim vulnerabilities",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8541-1",
+          "severity": "Unknown",
+          "cve_count": 3,
+          "cves": [
+            "CVE-2026-59856",
+            "CVE-2026-59857",
+            "CVE-2026-59858"
+          ],
+          "summary": "Hirohito Higashi discovered that Vim incorrectly escaped class or trait\nnames when performing PHP omni-completion. An attacker could possibly\nuse this issue to trick a user into opening a specially crafted PHP\nfile and executing arbitrary commands. This issue only affected Ubuntu\n22.04 LTS, Ubuntu 2"
+        },
+        {
+          "usn_id": "USN-8540-1",
+          "title": "USN-8540-1: OpenVPN vulnerabilities",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8540-1",
           "severity": "Unknown",
           "cve_count": 6,
           "cves": [
-            "CVE-2026-6045",
-            "CVE-2026-6040",
-            "CVE-2026-8356",
-            "CVE-2026-8358",
-            "CVE-2026-8357",
-            "CVE-2026-6039"
+            "CVE-2026-13698",
+            "CVE-2026-13117",
+            "CVE-2026-12932",
+            "CVE-2026-11771",
+            "CVE-2026-12996",
+            "CVE-2026-13122"
           ],
-          "summary": "It was discovered that LibreOffice incorrectly handled importing DXF\ndrawings. An attacker could use this issue to cause LibreOffice to crash,\nresulting in a denial of service, or possibly execute arbitrary code.\n(CVE-2026-6039)\n\nIt was discovered that LibreOffice incorrectly handled certain ODF num"
+          "summary": "It was discovered that OpenVPN had a 1-byte buffer overrun when handling\nNTLMv2 proxy responses. An attacker could use this issue to cause a denial\nof service or possibly execute arbitrary code. This issue only affected\nUbuntu 24.04 LTS and Ubuntu 26.04 LTS. (CVE-2026-11771)\n\nIt was discovered that"
         },
         {
-          "usn_id": "USN-8533-1",
-          "title": "USN-8533-1: OpenSSH vulnerabilities",
-          "date": "2026-07-13",
-          "link": "https://ubuntu.com/security/notices/USN-8533-1",
+          "usn_id": "USN-8539-1",
+          "title": "USN-8539-1: GnuTLS vulnerabilities",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8539-1",
           "severity": "Unknown",
-          "cve_count": 8,
+          "cve_count": 5,
           "cves": [
-            "CVE-2026-59997",
-            "CVE-2026-59999",
-            "CVE-2026-60002",
-            "CVE-2026-59998",
-            "CVE-2026-59996",
-            "CVE-2026-60000",
-            "CVE-2026-60001",
-            "CVE-2026-59995"
+            "CVE-2026-42012",
+            "CVE-2026-42013",
+            "CVE-2026-42014",
+            "CVE-2026-42011",
+            "CVE-2026-42015"
           ],
-          "summary": "It was discovered that OpenSSH sftp did not properly constrain the location\nof downloaded files when connecting to an attacker-controlled server. An\nattacker could possibly use this issue to write files to unintended\nlocations on the file system. (CVE-2026-59995)\n\nIt was discovered that OpenSSH scp"
+          "summary": "Haruto Kimura discovered that GnuTLS did not properly apply permitted\nname constraints in certain certificate validation paths. A remote\nattacker could possibly use this issue to bypass certificate validation,\nleading to a machine-in-the-middle attack. (CVE-2026-42011)\n\nOleh Konko discovered that Gn"
         },
         {
-          "usn_id": "USN-8532-1",
-          "title": "USN-8532-1: libssh2 vulnerabilities",
-          "date": "2026-07-13",
-          "link": "https://ubuntu.com/security/notices/USN-8532-1",
-          "severity": "Unknown",
-          "cve_count": 2,
-          "cves": [
-            "CVE-2026-58050",
-            "CVE-2026-58051"
-          ],
-          "summary": "It was discovered that libssh2 incorrectly handled certain publickey\nsubsystem attributes. A remote attacker controlling a malicious SSH server\ncould use this issue to cause a denial of service or possibly execute\narbitrary code. (CVE-2026-58050)\n\nIt was discovered that libssh2 did not properly init"
-        },
-        {
-          "usn_id": "USN-8496-3",
-          "title": "USN-8496-3: cifs-utils vulnerability",
-          "date": "2026-07-13",
-          "link": "https://ubuntu.com/security/notices/USN-8496-3",
+          "usn_id": "USN-8538-1",
+          "title": "USN-8538-1: alsa-lib vulnerability",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8538-1",
           "severity": "Unknown",
           "cve_count": 0,
           "cves": [],
-          "summary": "USN-8496-1 fixed vulnerabilities in cifs-utils. The update caused a\nregression and was backed out in USN-8496-2. This update reintroduces the\nsecurity fix, along with a fix for the regression.\n\nOriginal advisory details:\n\n It was discovered that cifs-utils incorrectly dropped root privileges\n before"
+          "summary": "It was discovered that alsa-lib incorrectly handled certain ALSA\nconfiguration text. An attacker could use this issue to cause alsa-lib to\ncrash, resulting in a denial of service, or possibly execute arbitrary\ncode."
         },
         {
-          "usn_id": "USN-8531-1",
-          "title": "USN-8531-1: libexif vulnerabilities",
-          "date": "2026-07-13",
-          "link": "https://ubuntu.com/security/notices/USN-8531-1",
-          "severity": "Low",
-          "cve_count": 3,
-          "cves": [
-            "CVE-2026-32775",
-            "CVE-2026-40385",
-            "CVE-2026-40386"
-          ],
-          "summary": "It was discovered that libexif had an integer overflow in its MakerNote\ndecoder when called with a zero-length buffer. An attacker could possibly\nuse this issue to cause a denial of service or obtain sensitive\ninformation. (CVE-2026-32775)\n\nIt was discovered that libexif had an integer overflow in i"
+          "usn_id": "USN-8537-1",
+          "title": "USN-8537-1: httplib2 vulnerability",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8537-1",
+          "severity": "Unknown",
+          "cve_count": 0,
+          "cves": [],
+          "summary": "It was discovered that httplib2 performed unbounded decompression of HTTP\nresponse bodies when the server used gzip or deflate Content-Encoding. A\nremote attacker could possibly use this issue to cause httplib2 to use\nexcessive resources, leading to a denial of service."
         },
         {
-          "usn_id": "USN-8530-1",
-          "title": "USN-8530-1: Linux kernel (AWS) vulnerabilities",
-          "date": "2026-07-10",
-          "link": "https://ubuntu.com/security/notices/USN-8530-1",
-          "severity": "Low",
-          "cve_count": 22,
+          "usn_id": "USN-8536-1",
+          "title": "USN-8536-1: MariaDB vulnerabilities",
+          "date": "2026-07-14",
+          "link": "https://ubuntu.com/security/notices/USN-8536-1",
+          "severity": "High",
+          "cve_count": 8,
           "cves": [
-            "CVE-2021-47202",
-            "CVE-2026-43284",
-            "CVE-2026-23272",
-            "CVE-2026-31659",
-            "CVE-2026-31685",
-            "CVE-2026-31607",
-            "CVE-2026-46243",
-            "CVE-2026-43503",
-            "CVE-2026-43011",
-            "CVE-2026-43037",
-            "CVE-2026-45988",
-            "CVE-2024-56643",
-            "CVE-2026-43038",
-            "CVE-2026-43414",
-            "CVE-2026-31402"
+            "CVE-2026-48163",
+            "CVE-2026-44173",
+            "CVE-2026-44171",
+            "CVE-2026-44169",
+            "CVE-2026-48165",
+            "CVE-2026-44168",
+            "CVE-2026-49261",
+            "CVE-2026-44172"
           ],
-          "summary": "It was discovered that the Linux kernel did not properly handle shared page\nfragments during socket buffer operations, collectively known as Dirty\nFrag. A logic flaw existed in the XFRM ESP-in-TCP subsystem and in the\nRxRPC networking subsystem when processing paged fragments. A local\nattacker could"
-        },
-        {
-          "usn_id": "USN-8529-1",
-          "title": "USN-8529-1: Linux kernel vulnerabilities",
-          "date": "2026-07-10",
-          "link": "https://ubuntu.com/security/notices/USN-8529-1",
-          "severity": "Low",
-          "cve_count": 21,
-          "cves": [
-            "CVE-2021-47202",
-            "CVE-2026-23272",
-            "CVE-2026-31659",
-            "CVE-2026-31685",
-            "CVE-2026-31607",
-            "CVE-2026-46243",
-            "CVE-2026-43503",
-            "CVE-2026-43011",
-            "CVE-2026-43037",
-            "CVE-2026-45988",
-            "CVE-2024-56643",
-            "CVE-2026-43038",
-            "CVE-2026-43414",
-            "CVE-2026-31402",
-            "CVE-2026-31637"
-          ],
-          "summary": "It was discovered that a logic flaw existed in the XFRM ESP-in-TCP\nsubsystem in the Linux kernel when handling socket buffer fragments. This\nflaw is known as Fragnesia. A local attacker could use this to escalate\nprivileges, or possibly escape a container. (CVE-2026-43503)\n\nSeveral security issues w"
-        },
-        {
-          "usn_id": "USN-8528-1",
-          "title": "USN-8528-1: Linux kernel (Xilinx ZynqMP) vulnerabilities",
-          "date": "2026-07-10",
-          "link": "https://ubuntu.com/security/notices/USN-8528-1",
-          "severity": "Low",
-          "cve_count": 82,
-          "cves": [
-            "CVE-2026-23198",
-            "CVE-2026-23272",
-            "CVE-2026-31649",
-            "CVE-2026-23351",
-            "CVE-2026-43078",
-            "CVE-2026-43500",
-            "CVE-2026-43033",
-            "CVE-2026-31478",
-            "CVE-2026-31685",
-            "CVE-2026-46243",
-            "CVE-2026-23202",
-            "CVE-2026-23258",
-            "CVE-2026-45988",
-            "CVE-2026-31669",
-            "CVE-2026-43414"
-          ],
-          "summary": "It was discovered that the Linux kernel algif_aead module did not properly\nhandle in-place cryptographic operations. This flaw is known as Copy Fail.\nA local attacker could use this to escalate privileges, or possibly escape\na container. (CVE-2026-31431)\n\nIt was discovered that the Linux kernel did"
-        },
-        {
-          "usn_id": "USN-8527-1",
-          "title": "USN-8527-1: Linux kernel (Raspberry Pi) vulnerabilities",
-          "date": "2026-07-10",
-          "link": "https://ubuntu.com/security/notices/USN-8527-1",
-          "severity": "Low",
-          "cve_count": 64,
-          "cves": [
-            "CVE-2026-43493",
-            "CVE-2026-23198",
-            "CVE-2026-31657",
-            "CVE-2026-43304",
-            "CVE-2026-23262",
-            "CVE-2025-40082",
-            "CVE-2026-23272",
-            "CVE-2026-31649",
-            "CVE-2026-43114",
-            "CVE-2026-31659",
-            "CVE-2026-23278",
-            "CVE-2025-38201",
-            "CVE-2025-37778",
-            "CVE-2026-23180",
-            "CVE-2026-31478"
-          ],
-          "summary": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - RISC-V architecture;\n  - Cryptographic API;\n  - InfiniBand drivers;\n  - IOMMU subsystem;\n  - Network drivers;\n  - ST"
+          "summary": "It was discovered that MariaDB did not properly validate parameters\nsupplied by a joiner node during a State Snapshot Transfer using the\nmariabackup method. An attacker could possibly use this issue to execute\narbitrary shell commands on the donor node. (CVE-2026-44168)\n\nIt was discovered that Maria"
         }
       ]
     },
@@ -711,16 +683,16 @@
             "144.0.7559.257"
           ],
           "cves": [
-            "CVE-2026-12443",
-            "CVE-2026-12033",
-            "CVE-2026-13029",
-            "CVE-2026-10006",
-            "CVE-2026-8514",
             "CVE-2026-9897",
-            "CVE-2026-11668",
-            "CVE-2026-9931",
+            "CVE-2026-8514",
             "CVE-2026-12467",
-            "CVE-2026-11673"
+            "CVE-2026-9931",
+            "CVE-2026-11668",
+            "CVE-2026-13029",
+            "CVE-2026-12033",
+            "CVE-2026-11673",
+            "CVE-2026-10006",
+            "CVE-2026-12443"
           ],
           "cve_count": 10,
           "security_fix_count": 11
@@ -730,31 +702,31 @@
           "date": "2026-07-08",
           "link": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01162222768.html",
           "versions": [
-            "150.0.7871.115",
             "150.0.7871.114",
+            "150.0.7871.115",
             "150.0.7871.101"
           ],
           "cves": [
-            "CVE-2026-15118",
-            "CVE-2026-15108",
-            "CVE-2026-15109",
-            "CVE-2026-15133",
-            "CVE-2026-15116",
-            "CVE-2026-15127",
-            "CVE-2026-15123",
-            "CVE-2026-15110",
-            "CVE-2026-15132",
             "CVE-2026-15125",
-            "CVE-2026-15115",
-            "CVE-2026-15111",
-            "CVE-2026-15130",
-            "CVE-2026-15121",
-            "CVE-2026-15120",
-            "CVE-2026-15124",
-            "CVE-2026-15117",
-            "CVE-2026-15128",
+            "CVE-2026-15108",
+            "CVE-2026-15129",
+            "CVE-2026-15109",
+            "CVE-2026-15131",
+            "CVE-2026-15116",
+            "CVE-2026-15133",
             "CVE-2026-15107",
-            "CVE-2026-15122"
+            "CVE-2026-15110",
+            "CVE-2026-15119",
+            "CVE-2026-15121",
+            "CVE-2026-15122",
+            "CVE-2026-15127",
+            "CVE-2026-15112",
+            "CVE-2026-15120",
+            "CVE-2026-15128",
+            "CVE-2026-15111",
+            "CVE-2026-15114",
+            "CVE-2026-15115",
+            "CVE-2026-15118"
           ],
           "cve_count": 27,
           "security_fix_count": 32
